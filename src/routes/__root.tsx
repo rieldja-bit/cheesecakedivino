@@ -77,14 +77,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Cheesecake de Oro — Recetario Cheesecake Ruso en Paleta" },
+      { name: "description", content: "Descubrí el Cheesecake Ruso en Paleta: 25 recetas gourmet, fórmula de costos y marketing para transformarlo en un negocio rentable desde casa." },
+      { property: "og:title", content: "Cheesecake de Oro — Recetario Cheesecake Ruso en Paleta" },
+      { property: "og:description", content: "25 recetas + bonos exclusivos. Empezá hoy con un producto viral, económico y de alta ganancia." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
