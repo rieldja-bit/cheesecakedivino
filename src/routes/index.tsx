@@ -264,7 +264,7 @@ function SalesPage() {
                 key={c.title}
                 className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card p-6 transition-transform hover:-translate-y-1"
               >
-                <div className="relative flex h-48 items-center justify-center">
+                <div className="relative flex h-72 items-center justify-center sm:h-56 md:h-48">
                   <div
                     className="absolute inset-0 rounded-xl opacity-30 blur-2xl"
                     style={{ background: "radial-gradient(circle, oklch(0.78 0.16 82 / 0.4), transparent 70%)" }}
@@ -377,11 +377,11 @@ function SalesPage() {
                 <span className="text-sm font-bold uppercase tracking-wider text-primary">
                   {b.tag}
                 </span>
-                <div className="mt-4 grid gap-6 sm:grid-cols-[160px_1fr] sm:items-center">
+                <div className="mt-4 grid gap-6 sm:grid-cols-[200px_1fr] sm:items-center">
                   <img
                     src={b.img}
                     alt={b.title}
-                    className="mx-auto w-full max-w-[360px] drop-shadow-[0_15px_30px_rgba(0,0,0,0.5)] sm:max-w-[180px]"
+                    className="mx-auto w-full max-w-none drop-shadow-[0_15px_30px_rgba(0,0,0,0.5)] sm:max-w-[220px]"
                   />
                   <div>
                     <h3 className="text-2xl font-black">{b.title}</h3>
