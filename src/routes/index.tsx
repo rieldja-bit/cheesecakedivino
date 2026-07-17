@@ -65,9 +65,9 @@ function SalesPage() {
               "radial-gradient(circle at 20% 30%, oklch(0.78 0.16 82 / 0.25), transparent 50%), radial-gradient(circle at 80% 70%, oklch(0.35 0.14 20 / 0.4), transparent 60%)",
           }}
         />
-        <div className="relative mx-auto flex max-w-5xl flex-col items-center gap-10 px-4 pt-6 pb-16 text-center sm:pt-10 sm:pb-24 md:gap-14 md:pt-16">
+        <div className="relative mx-auto flex max-w-5xl flex-col items-center gap-10 px-2 pt-6 pb-16 text-center sm:px-4 sm:pt-10 sm:pb-24 md:gap-14 md:pt-16">
           <div className="w-full">
-            <div className="relative mx-auto w-full max-w-[560px] sm:max-w-[680px] md:max-w-[820px]">
+            <div className="relative mx-auto w-full max-w-none sm:max-w-[720px] md:max-w-[900px]">
               <div
                 className="absolute -inset-16 rounded-full blur-3xl opacity-60"
                 style={{ background: "radial-gradient(circle, oklch(0.78 0.16 82 / 0.5), transparent 70%)" }}
@@ -181,7 +181,7 @@ function SalesPage() {
               src="https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784285994/87db9b49-7d4a-493e-8325-9f4dd98da4ac_xgtdmy.png"
               alt="Recetario Cheesecake Divino"
               loading="lazy"
-              className="mx-auto w-full max-w-xs sm:max-w-sm md:max-w-full drop-shadow-[0_25px_50px_rgba(0,0,0,0.5)]"
+              className="mx-auto w-full max-w-none md:max-w-full drop-shadow-[0_25px_50px_rgba(0,0,0,0.5)]"
             />
           </div>
         </div>
@@ -262,7 +262,7 @@ function SalesPage() {
             ].map((c) => (
               <div
                 key={c.title}
-                className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card p-6 transition-transform hover:-translate-y-1"
+                className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card p-4 sm:p-6 transition-transform hover:-translate-y-1"
               >
                 <div className="relative flex items-center justify-center md:h-48">
                   <div
