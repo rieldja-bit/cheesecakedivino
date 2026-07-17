@@ -15,7 +15,8 @@ import {
   Lock,
 } from "lucide-react";
 import chefImg from "@/assets/chef.jpg";
-import cheesecakeDrippingVideo from "@/assets/cheesecake-dripping.mp4.asset.json";
+// Video served from public/ so it works on Lovable AND Cloudflare Pages.
+const cheesecakeDrippingVideo = { url: "/cheesecake-dripping.mp4" };
 import cheesecakeDrippingImg from "@/assets/cheesecake-dripping.jpg";
 
 const heroImg =
