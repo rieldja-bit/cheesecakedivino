@@ -178,7 +178,7 @@ function SalesPage() {
           </div>
           <div className="relative left-1/2 w-screen -translate-x-1/2 md:left-auto md:w-full md:translate-x-0">
             <img
-              src="https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784285994/87db9b49-7d4a-493e-8325-9f4dd98da4ac_xgtdmy.png"
+              src="https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784291601/xxxxxxxxxxxxxxxxxxxxxxxxxxx_dsdw6n.png"
               alt="Recetario Cheesecake Divino"
               loading="lazy"
               className="block w-full h-auto drop-shadow-[0_25px_50px_rgba(0,0,0,0.5)]"
@@ -242,7 +242,7 @@ function SalesPage() {
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {[
               {
-                img: "https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784285965/de7b698d-e8dc-43cc-848f-d429b67340c8_nzcvwc.png",
+                img: "https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784291601/xxxxxxxxxxxxxxxxxxxxxxxxxxx_dsdw6n.png",
                 title: "Recetas base",
                 desc: "25 versiones probadas y explicadas al detalle. De la mezcla al último detalle.",
                 icon: BookOpen,
