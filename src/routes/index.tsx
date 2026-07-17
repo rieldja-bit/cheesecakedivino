@@ -15,6 +15,7 @@ import {
   Lock,
 } from "lucide-react";
 import chefImg from "@/assets/chef.jpg";
+import cheesecakeDrippingImg from "@/assets/cheesecake-dripping.jpg";
 
 const heroImg =
   "https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784287649/0893d6ad-062f-4ff9-83f2-a6a93e93f685_rhsumv.png";
@@ -176,10 +177,12 @@ function SalesPage() {
           </div>
           <div className="relative mx-auto w-full max-w-[520px] md:max-w-none">
             <img
-              src="https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784295347/cccccc_ap4729.png"
-              alt="Recetario Cheesecake Divino"
+              src={cheesecakeDrippingImg}
+              alt="Cheesecake con caramelo dorado cayendo por los bordes"
+              width={1024}
+              height={1024}
               loading="lazy"
-              className="block w-full h-auto drop-shadow-[0_25px_50px_rgba(0,0,0,0.5)]"
+              className="block w-full h-auto rounded-3xl drop-shadow-[0_25px_50px_rgba(0,0,0,0.5)]"
             />
           </div>
         </div>
