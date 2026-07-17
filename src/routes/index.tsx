@@ -15,7 +15,9 @@ import {
   Lock,
 } from "lucide-react";
 import chefImg from "@/assets/chef.jpg";
-import heroImg from "@/assets/hero-cheesecake.png";
+
+const heroImg =
+  "https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784287649/0893d6ad-062f-4ff9-83f2-a6a93e93f685_rhsumv.png";
 
 export const Route = createFileRoute("/")({
   component: SalesPage,
