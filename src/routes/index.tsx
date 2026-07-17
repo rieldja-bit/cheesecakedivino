@@ -64,10 +64,10 @@ function SalesPage() {
         <div className="relative mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:py-24 md:grid-cols-2 md:items-center">
           <div className="order-2 md:order-1">
             <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary">
-              <Flame className="h-3.5 w-3.5" /> Tendencia viral 2026
+              <Flame className="h-3.5 w-3.5" /> Nuevo · Edición 2026
             </span>
             <h1 className="mt-5 text-4xl font-black leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
-              Descubrí el{" "}
+              El recetario{" "}
               <span
                 className="bg-clip-text text-transparent"
                 style={{
@@ -75,19 +75,19 @@ function SalesPage() {
                     "linear-gradient(120deg, oklch(0.88 0.17 90), oklch(0.72 0.17 75), oklch(0.88 0.17 90))",
                 }}
               >
-                Cheesecake Ruso en Paleta
+                Cheesecake Divino
               </span>
-              , la tendencia que estás transformando en un negocio rentable.
+              : el postre que enamora a primera mordida y se transforma en tu próximo negocio.
             </h1>
             <p className="mt-6 max-w-xl text-lg text-muted-foreground">
-              Aprovechá un producto viral, fácil de hacer, económico y con ganancia alta. Todo
-              listo para que empieces hoy mismo — sin experiencia previa.
+              Un postre que se prepara en minutos, cuesta poco y se vende solo. Todo el paso a
+              paso, los sabores y la estrategia de precios listos para que arranques hoy.
             </p>
             <div className="mt-8 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
-              <CTA>Quiero descargar ahora</CTA>
+              <CTA>Quiero mi recetario</CTA>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <ShieldCheck className="h-4 w-4 text-primary" />
-                Garantía de 7 días
+                7 días de garantía total
               </div>
             </div>
             <div className="mt-8 flex flex-wrap items-center gap-6 text-sm text-muted-foreground">
@@ -97,7 +97,7 @@ function SalesPage() {
                 ))}
                 <span className="ml-1">4.9/5</span>
               </div>
-              <span>+3.200 alumnas activas</span>
+              <span>Más de 3.200 emprendedoras ya lo usan</span>
             </div>
           </div>
           <div className="order-1 md:order-2">
@@ -108,7 +108,7 @@ function SalesPage() {
               />
               <img
                 src="http://polarisdigital.online/wp-content/uploads/2026/02/Expert-Photoroom.png"
-                alt="Cheesecake Ruso en Paleta - producto"
+                alt="Cheesecake Divino - producto"
                 className="relative w-full drop-shadow-[0_30px_50px_rgba(0,0,0,0.5)]"
               />
             </div>
@@ -120,10 +120,10 @@ function SalesPage() {
       <section className="border-y border-border/50 bg-card/40 py-16">
         <div className="mx-auto grid max-w-6xl grid-cols-2 gap-6 px-4 md:grid-cols-4">
           {[
-            { icon: Flame, title: "Tendencia viral", desc: "Producto explotando en redes." },
-            { icon: TrendingUp, title: "Alta ganancia", desc: "Márgenes de hasta 400%." },
-            { icon: Zap, title: "Producción rápida", desc: "Listo en minutos, sin horno." },
-            { icon: Eye, title: "Venden con la vista", desc: "Estética premium y virales." },
+            { icon: Flame, title: "Se vende solo", desc: "Estética que enamora en redes." },
+            { icon: TrendingUp, title: "Ganancia real", desc: "Hasta 4x lo que invertís." },
+            { icon: Zap, title: "Sin horno", desc: "Listo en pocos minutos." },
+            { icon: Eye, title: "Look premium", desc: "Presentación digna de pastelería." },
           ].map((v) => (
             <div key={v.title} className="text-center">
               <div
@@ -144,14 +144,14 @@ function SalesPage() {
         <div className="grid gap-12 md:grid-cols-2 md:items-center">
           <div>
             <h2 className="text-3xl font-black tracking-tight sm:text-4xl">
-              Con este producto vas a lograr…
+              Lo que vas a conseguir con Cheesecake Divino
             </h2>
             <ul className="mt-8 space-y-4">
               {[
-                "Crear un postre tan visualmente irresistible que tus clientes te van a pedir más antes de terminar el primero.",
-                "Tener tu primera tanda lista y vendida en menos de 7 días, incluso sin experiencia previa.",
-                "Presentar, decorar y entregar tus Cheesecake Rusos en Paleta con un estilo premium y profesional.",
-                "Construir un negocio desde casa con un producto viral, económico y con márgenes muy altos.",
+                "Preparar un cheesecake tan lindo que tus clientes te piden el segundo antes de terminar el primero.",
+                "Vender tu primera tanda esta misma semana, aunque nunca hayas cocinado para vender.",
+                "Dominar la decoración, el emplatado y la entrega con acabado profesional.",
+                "Montar un emprendimiento desde tu cocina, con inversión mínima y margen alto.",
               ].map((t) => (
                 <li key={t} className="flex gap-3">
                   <span
@@ -165,16 +165,16 @@ function SalesPage() {
               ))}
             </ul>
             <p className="mt-8 text-muted-foreground">
-              Si te identificás, tocá el botón y reservá tu cupo ahora.
+              Si esto es lo que buscás, hacé clic y empezá hoy.
             </p>
             <div className="mt-6">
-              <CTA>¡Quiero descargar ahora!</CTA>
+              <CTA>Empezar ahora</CTA>
             </div>
           </div>
           <div className="relative">
             <img
               src="http://polarisdigital.online/wp-content/uploads/2026/02/Mockup-1.png"
-              alt="Recetario Cheesecake de Oro"
+              alt="Recetario Cheesecake Divino"
               className="w-full drop-shadow-[0_25px_50px_rgba(0,0,0,0.5)]"
             />
           </div>
@@ -185,27 +185,27 @@ function SalesPage() {
       <section className="border-y border-border/50 bg-card/40 py-20">
         <div className="mx-auto max-w-6xl px-4">
           <div className="text-center">
-            <h2 className="text-3xl font-black tracking-tight sm:text-4xl">Esto es lo que verás</h2>
-            <p className="mt-3 text-muted-foreground">Todo el contenido del recetario, listo para aplicar.</p>
+            <h2 className="text-3xl font-black tracking-tight sm:text-4xl">Todo lo que hay adentro</h2>
+            <p className="mt-3 text-muted-foreground">Un recetario práctico, directo y listo para aplicar hoy.</p>
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {[
               {
                 img: "http://polarisdigital.online/wp-content/uploads/2026/02/Mockup-Principal.png",
-                title: "Cheesecake en Tendencia",
-                desc: "Más de 20 recetas listas para vender. Paso a paso probado. Acabado premium.",
+                title: "Recetas base",
+                desc: "25 versiones probadas y explicadas al detalle. De la mezcla al último detalle.",
                 icon: BookOpen,
               },
               {
                 img: "http://polarisdigital.online/wp-content/uploads/2026/02/Mockup-Secundario.png",
-                title: "Sabores Gourmet",
-                desc: "Rellenos modernos, sabores virales y ediciones limitadas para vender más.",
+                title: "Sabores gourmet y ediciones especiales",
+                desc: "Combinaciones modernas, rellenos irresistibles y ediciones estacionales.",
                 icon: Sparkles,
               },
               {
                 img: "http://polarisdigital.online/wp-content/uploads/2026/02/Mockup-Terciario.png",
-                title: "Costos & Marketing",
-                desc: "Calculá precios sin perder dinero. Márgenes para escalar y vender rápido.",
+                title: "Precio & venta",
+                desc: "Fórmula clara para cobrar bien y vender rápido, sin regalar tu trabajo.",
                 icon: DollarSign,
               },
             ].map((c) => (
@@ -234,7 +234,7 @@ function SalesPage() {
               WebkitTextFillColor: "transparent",
             }}
           >
-            Esta es la última edición del año.
+            Un solo pago. Acceso para siempre.
           </p>
         </div>
       </section>
@@ -242,21 +242,21 @@ function SalesPage() {
       {/* DEPOIMENTOS */}
       <section className="mx-auto max-w-6xl px-4 py-20">
         <h2 className="text-center text-3xl font-black tracking-tight sm:text-4xl">
-          Lo que dicen nuestros clientes <span className="text-primary">❤️</span>
+          Historias reales de quienes ya empezaron <span className="text-primary">❤️</span>
         </h2>
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {[
             {
-              name: "Camila R.",
-              text: "En 5 días vendí toda mi primera tanda. El recetario es súper claro y el paso a paso funciona.",
+              name: "Martina G.",
+              text: "Vendí toda la primera tanda en menos de una semana. El paso a paso es imposible de errar.",
             },
             {
-              name: "Valentina M.",
-              text: "Nunca había hecho postres para vender. Con la fórmula de precios ya recuperé la inversión x10.",
+              name: "Rocío P.",
+              text: "Nunca había cocinado para vender. Con la parte de precios recuperé lo invertido diez veces.",
             },
             {
-              name: "Sofía L.",
-              text: "Los sabores gourmet son un golazo. Mis clientas piden por WhatsApp todos los días.",
+              name: "Luciana A.",
+              text: "Los sabores gourmet me diferenciaron. Hoy tengo pedidos por WhatsApp todos los días.",
             },
           ].map((t) => (
             <div key={t.name} className="rounded-2xl border border-border/60 bg-card p-6">
@@ -271,7 +271,7 @@ function SalesPage() {
           ))}
         </div>
         <div className="mt-10 text-center">
-          <CTA>¡Quiero descargar ahora!</CTA>
+          <CTA>Quiero empezar hoy</CTA>
         </div>
       </section>
 
@@ -286,25 +286,25 @@ function SalesPage() {
         <div className="mx-auto max-w-6xl px-4">
           <div className="text-center">
             <span className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary">
-              <Gift className="h-3.5 w-3.5" /> Regalos exclusivos
+              <Gift className="h-3.5 w-3.5" /> Incluidos sin costo
             </span>
-            <h2 className="mt-5 text-3xl font-black tracking-tight sm:text-4xl">Bonos Exclusivos</h2>
+            <h2 className="mt-5 text-3xl font-black tracking-tight sm:text-4xl">Dos bonos que suman valor real</h2>
             <p className="mx-auto mt-3 max-w-2xl text-muted-foreground">
-              ¡Y como si fuera poco, por esta única ocasión te llevás estos increíbles bonos de regalo!
+              Sumás dos recetarios extra que amplían tu catálogo y multiplican tus posibilidades de venta.
             </p>
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-2">
             {[
               {
                 tag: "Bono 1",
-                title: "COOKIE SHOTS",
-                desc: "Recetas fáciles para hacer Cookie Shots irresistibles, crujientes por fuera, suaves por dentro y 100% sin gluten.",
+                title: "COOKIE SHOTS DE AUTOR",
+                desc: "15 recetas de vasitos de galleta rellenables — crujientes por fuera, tiernos por dentro, listos para viralizarse.",
                 from: "$76",
               },
               {
                 tag: "Bono 2",
                 title: "GALLETAS SIN GLUTEN",
-                desc: "Recetas rápidas y deliciosas para hacer galletas sin gluten, crocantes por fuera, suaves por dentro y con ingredientes simples.",
+                desc: "15 galletas artesanales sin gluten, con ingredientes simples y sabores que se destacan en cualquier vitrina.",
                 from: "$54",
               },
             ].map((b) => (
@@ -336,7 +336,7 @@ function SalesPage() {
                       WebkitTextFillColor: "transparent",
                     }}
                   >
-                    ¡GRATIS!
+                    Incluido
                   </span>
                 </div>
               </div>
@@ -349,7 +349,7 @@ function SalesPage() {
       <section id="checkout" className="mx-auto max-w-6xl px-4 py-20">
         <div className="text-center">
           <span className="inline-block rounded-full bg-destructive/20 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-destructive-foreground">
-            🔥 Oferta Especial
+            🔥 Precio de lanzamiento
           </span>
         </div>
         <div
@@ -374,7 +374,7 @@ function SalesPage() {
             </div>
             <div>
               <h2 className="text-2xl font-black leading-tight sm:text-3xl">
-                ¡Tu acceso inmediato al recetario{" "}
+                Acceso inmediato al recetario{" "}
                 <span
                   className="bg-clip-text text-transparent"
                   style={{
@@ -382,17 +382,17 @@ function SalesPage() {
                       "linear-gradient(120deg, oklch(0.88 0.17 90), oklch(0.72 0.17 75))",
                   }}
                 >
-                  Cheesecake de Oro
+                  Cheesecake Divino
                 </span>
-                !
+                .
               </h2>
               <ul className="mt-6 space-y-3">
                 {[
-                  "25 recetas deliciosas y prácticas",
+                  "25 recetas explicadas paso a paso",
                   "Sabores gourmet",
-                  "Fórmula de costos & marketing",
-                  "2 bonos exclusivos",
-                  "Paso a paso para empezar hoy",
+                  "Fórmula de precios y estrategia de venta",
+                  "2 bonos: Cookie Shots + Galletas sin gluten",
+                  "Descarga inmediata, para siempre",
                 ].map((t) => (
                   <li key={t} className="flex items-center gap-3">
                     <Check className="h-5 w-5 shrink-0 text-primary" strokeWidth={3} />
@@ -401,16 +401,16 @@ function SalesPage() {
                 ))}
               </ul>
               <p className="mt-6 text-sm text-muted-foreground">
-                🔥 Oferta única: pagás menos de lo que gastarías en un café... y ganás un negocio para toda la vida.
+                Invertís menos que un café con medialunas y te llevás un negocio para toda la vida.
               </p>
               <div className="mt-8 flex items-baseline gap-3">
                 <span className="text-lg text-muted-foreground">
-                  Antes <span className="line-through">$60 USD</span>
+                  Valor real <span className="line-through">$60 USD</span>
                 </span>
               </div>
               <div className="mt-2 flex items-baseline gap-3">
                 <span className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
-                  Hoy solo
+                  Precio de hoy
                 </span>
                 <span
                   className="text-5xl font-black sm:text-6xl"
@@ -425,11 +425,11 @@ function SalesPage() {
                 <span className="text-lg font-bold text-primary">USD</span>
               </div>
               <div className="mt-8">
-                <CTA>¡Sí, quiero aprovechar el descuento!</CTA>
+                <CTA>Sí, lo quiero a este precio</CTA>
               </div>
               <p className="mt-4 text-sm text-muted-foreground">
-                <strong className="text-foreground">95% de descuento</strong> — acceso inmediato con{" "}
-                <strong className="text-foreground">pago único</strong>.
+                <strong className="text-foreground">Un solo pago</strong> · Acceso inmediato ·{" "}
+                <strong className="text-foreground">Sin suscripciones</strong>.
               </p>
             </div>
           </div>
@@ -443,20 +443,20 @@ function SalesPage() {
           >
             <ShieldCheck className="h-8 w-8 text-primary-foreground" strokeWidth={2.5} />
           </div>
-          <h3 className="mt-4 text-xl font-black">Garantía de 7 días</h3>
+          <h3 className="mt-4 text-xl font-black">7 días para probarlo sin riesgo</h3>
           <p className="mx-auto mt-2 max-w-xl text-sm text-muted-foreground">
-            Tu inversión está protegida. Si no estás completamente satisfecho/a con el recetario, te
-            devolvemos el 100% de tu dinero sin complicaciones.
+            Si el recetario no cumple con lo que te prometemos, escribinos y te devolvemos cada
+            centavo. Sin preguntas, sin trabas.
           </p>
           <div className="mt-6 flex items-center justify-center gap-2 text-sm text-muted-foreground">
             <Lock className="h-4 w-4 text-primary" />
-            Tu compra 100% segura
+            Pago 100% seguro
           </div>
         </div>
       </section>
 
       <footer className="border-t border-border/50 py-8 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} Cheesecake de Oro. Todos los derechos reservados.
+        © {new Date().getFullYear()} Cheesecake Divino. Todos los derechos reservados.
       </footer>
     </div>
   );
