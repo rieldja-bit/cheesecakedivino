@@ -237,7 +237,7 @@ function SalesPage() {
             <h2 className="text-3xl font-black tracking-tight sm:text-4xl">Todo lo que hay adentro</h2>
             <p className="mt-3 text-lg text-muted-foreground">Un recetario práctico, directo y listo para aplicar hoy.</p>
           </div>
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
+          <div className="mx-auto mt-12 grid max-w-3xl gap-10">
             {[
               {
                 img: "https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784285965/de7b698d-e8dc-43cc-848f-d429b67340c8_nzcvwc.png",
@@ -260,9 +260,9 @@ function SalesPage() {
             ].map((c) => (
               <div
                 key={c.title}
-                className="group relative rounded-2xl border border-border/60 bg-card p-4 sm:p-6 transition-transform hover:-translate-y-1"
+                className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card p-6 sm:p-8 transition-transform hover:-translate-y-1"
               >
-                <div className="relative flex items-center justify-center md:h-48">
+                <div className="relative flex items-center justify-center">
                   <div
                     className="absolute inset-0 rounded-xl opacity-30 blur-2xl"
                     style={{ background: "radial-gradient(circle, oklch(0.78 0.16 82 / 0.4), transparent 70%)" }}
@@ -270,12 +270,12 @@ function SalesPage() {
                   <img
                     src={c.img}
                     alt={c.title}
-                    className="relative block w-full h-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.5)] md:h-full md:w-auto md:object-contain"
+                    className="relative block w-full h-auto drop-shadow-[0_20px_40px_rgba(0,0,0,0.55)]"
                   />
                 </div>
-                <c.icon className="mt-5 h-6 w-6 text-primary sm:mt-4" />
-                <h3 className="mt-3 text-xl font-bold">{c.title}</h3>
-                <p className="mt-2 text-base text-muted-foreground">{c.desc}</p>
+                <c.icon className="mt-6 h-7 w-7 text-primary" />
+                <h3 className="mt-3 text-2xl font-bold sm:text-3xl">{c.title}</h3>
+                <p className="mt-3 text-lg text-muted-foreground">{c.desc}</p>
               </div>
             ))}
           </div>
@@ -346,7 +346,7 @@ function SalesPage() {
               Sumás dos recetarios extra que amplían tu catálogo y multiplican tus posibilidades de venta.
             </p>
           </div>
-          <div className="mx-auto mt-12 grid max-w-3xl gap-8">
+          <div className="mt-12 grid gap-8 md:grid-cols-2">
             {[
               {
                 tag: "Bono 1",
@@ -384,11 +384,11 @@ function SalesPage() {
                   alt={b.title}
                   className="mx-auto mt-6 w-full drop-shadow-[0_20px_40px_rgba(0,0,0,0.55)]"
                 />
-                <div className="mt-6 text-center">
+                <div className="mt-6">
                   <h3 className="text-2xl font-black sm:text-3xl">{b.title}</h3>
-                  <p className="mx-auto mt-3 max-w-xl text-lg text-muted-foreground">{b.desc}</p>
+                  <p className="mt-3 text-lg text-muted-foreground">{b.desc}</p>
                 </div>
-                <div className="mt-6 flex items-baseline justify-center gap-3">
+                <div className="mt-6 flex items-baseline gap-3">
                   <span className="text-lg text-muted-foreground line-through sm:text-base">De {b.from}</span>
                   <span
                     className="text-2xl font-black"
