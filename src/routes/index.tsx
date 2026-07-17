@@ -107,7 +107,7 @@ function SalesPage() {
                 style={{ background: "radial-gradient(circle, oklch(0.78 0.16 82 / 0.5), transparent 70%)" }}
               />
               <img
-                src="http://polarisdigital.online/wp-content/uploads/2026/02/Expert-Photoroom.png"
+                src="https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784285965/de7b698d-e8dc-43cc-848f-d429b67340c8_nzcvwc.png"
                 alt="Cheesecake Divino - producto"
                 className="relative w-full drop-shadow-[0_30px_50px_rgba(0,0,0,0.5)]"
               />
@@ -173,7 +173,7 @@ function SalesPage() {
           </div>
           <div className="relative">
             <img
-              src="http://polarisdigital.online/wp-content/uploads/2026/02/Mockup-1.png"
+              src="https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784285994/87db9b49-7d4a-493e-8325-9f4dd98da4ac_xgtdmy.png"
               alt="Recetario Cheesecake Divino"
               className="w-full drop-shadow-[0_25px_50px_rgba(0,0,0,0.5)]"
             />
@@ -191,19 +191,19 @@ function SalesPage() {
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {[
               {
-                img: "http://polarisdigital.online/wp-content/uploads/2026/02/Mockup-Principal.png",
+                img: "https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784285965/de7b698d-e8dc-43cc-848f-d429b67340c8_nzcvwc.png",
                 title: "Recetas base",
                 desc: "25 versiones probadas y explicadas al detalle. De la mezcla al último detalle.",
                 icon: BookOpen,
               },
               {
-                img: "http://polarisdigital.online/wp-content/uploads/2026/02/Mockup-Secundario.png",
+                img: "https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784285994/87db9b49-7d4a-493e-8325-9f4dd98da4ac_xgtdmy.png",
                 title: "Sabores gourmet y ediciones especiales",
                 desc: "Combinaciones modernas, rellenos irresistibles y ediciones estacionales.",
                 icon: Sparkles,
               },
               {
-                img: "http://polarisdigital.online/wp-content/uploads/2026/02/Mockup-Terciario.png",
+                img: "https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784286013/8c7821c6-353d-4e15-8a89-4dbdc2a8ca12_pgdbaa.png",
                 title: "Precio & venta",
                 desc: "Fórmula clara para cobrar bien y vender rápido, sin regalar tu trabajo.",
                 icon: DollarSign,
@@ -367,8 +367,8 @@ function SalesPage() {
                 style={{ background: "radial-gradient(circle, oklch(0.78 0.16 82 / 0.6), transparent 70%)" }}
               />
               <img
-                src="http://polarisdigital.online/wp-content/uploads/2026/02/Mockup-1.png"
-                alt="Recetario Cheesecake de Oro"
+                src="https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784285965/de7b698d-e8dc-43cc-848f-d429b67340c8_nzcvwc.png"
+                alt="Recetario Cheesecake Divino"
                 className="relative w-full drop-shadow-[0_25px_50px_rgba(0,0,0,0.5)]"
               />
             </div>
