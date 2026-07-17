@@ -14,6 +14,7 @@ import {
   Gift,
   Lock,
 } from "lucide-react";
+import chefImg from "@/assets/chef.jpg";
 
 export const Route = createFileRoute("/")({
   component: SalesPage,
@@ -64,7 +65,7 @@ function SalesPage() {
         <div className="relative mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:py-24 md:grid-cols-2 md:items-center">
           <div className="order-2 md:order-1">
             <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary">
-              <Flame className="h-3.5 w-3.5" /> Nuevo · Edición 2026
+              <Flame className="h-3.5 w-3.5" /> Best seller · Recetario premium
             </span>
             <h1 className="mt-5 text-4xl font-black leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
               El recetario{" "}
