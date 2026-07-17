@@ -136,7 +136,7 @@ function SalesPage() {
                 <v.icon className="h-7 w-7 text-primary-foreground" strokeWidth={2.5} />
               </div>
               <h3 className="mt-4 text-lg font-bold">{v.title}</h3>
-              <p className="mt-1 text-sm text-muted-foreground">{v.desc}</p>
+              <p className="mt-1 text-base text-muted-foreground">{v.desc}</p>
             </div>
           ))}
         </div>
@@ -163,7 +163,7 @@ function SalesPage() {
                   >
                     <Check className="h-4 w-4 text-primary-foreground" strokeWidth={3} />
                   </span>
-                  <span className="text-base text-foreground/90">{t}</span>
+                  <span className="text-lg text-foreground/90">{t}</span>
                 </li>
               ))}
             </ul>
@@ -203,8 +203,8 @@ function SalesPage() {
             />
           </div>
           <div>
-            <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary">
-              <Sparkles className="h-3.5 w-3.5" /> Detrás del recetario
+            <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-semibold uppercase tracking-wider text-primary">
+              <Sparkles className="h-4 w-4" /> Detrás del recetario
             </span>
             <h2 className="mt-5 text-3xl font-black tracking-tight sm:text-4xl">
               Recetas probadas por una pastelera profesional
@@ -222,7 +222,7 @@ function SalesPage() {
               ].map((t) => (
                 <li key={t} className="flex gap-3">
                   <Check className="mt-1 h-5 w-5 shrink-0 text-primary" strokeWidth={3} />
-                  <span className="text-foreground/90">{t}</span>
+              <span className="text-lg text-foreground/90">{t}</span>
                 </li>
               ))}
             </ul>
@@ -235,7 +235,7 @@ function SalesPage() {
         <div className="mx-auto max-w-6xl px-4">
           <div className="text-center">
             <h2 className="text-3xl font-black tracking-tight sm:text-4xl">Todo lo que hay adentro</h2>
-            <p className="mt-3 text-muted-foreground">Un recetario práctico, directo y listo para aplicar hoy.</p>
+            <p className="mt-3 text-lg text-muted-foreground">Un recetario práctico, directo y listo para aplicar hoy.</p>
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {[
@@ -271,7 +271,7 @@ function SalesPage() {
                 </div>
                 <c.icon className="mt-4 h-6 w-6 text-primary" />
                 <h3 className="mt-3 text-xl font-bold">{c.title}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">{c.desc}</p>
+                <p className="mt-2 text-base text-muted-foreground">{c.desc}</p>
               </div>
             ))}
           </div>
