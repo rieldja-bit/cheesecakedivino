@@ -15,6 +15,7 @@ import {
   Lock,
 } from "lucide-react";
 import chefImg from "@/assets/chef.jpg";
+import heroImg from "@/assets/hero-cheesecake.png";
 
 export const Route = createFileRoute("/")({
   component: SalesPage,
@@ -46,10 +47,10 @@ function SalesPage() {
     <div className="min-h-screen bg-background text-foreground">
       {/* Top urgency bar */}
       <div
-        className="w-full py-3 px-4 text-center text-sm sm:text-base font-semibold text-white"
+        className="w-full py-3 px-4 text-center text-base sm:text-lg font-semibold text-white"
         style={{ background: "linear-gradient(90deg, oklch(0.35 0.14 20), oklch(0.28 0.11 20))" }}
       >
-        <Clock className="inline-block h-4 w-4 mr-2 -mt-0.5" />
+        <Clock className="inline-block h-5 w-5 mr-2 -mt-0.5" />
         Promo por tiempo limitado — el precio vuelve a subir en las próximas horas.
       </div>
 
@@ -64,8 +65,8 @@ function SalesPage() {
         />
         <div className="relative mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:py-24 md:grid-cols-2 md:items-center">
           <div className="order-2 md:order-1">
-            <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary">
-              <Flame className="h-3.5 w-3.5" /> Best seller · Recetario premium
+            <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-semibold uppercase tracking-wider text-primary">
+              <Flame className="h-4 w-4" /> Best seller · Recetario premium
             </span>
             <h1 className="mt-5 text-4xl font-black leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
               El recetario{" "}
@@ -86,15 +87,15 @@ function SalesPage() {
             </p>
             <div className="mt-8 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
               <CTA>Quiero mi recetario</CTA>
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <ShieldCheck className="h-4 w-4 text-primary" />
+              <div className="flex items-center gap-2 text-base text-muted-foreground">
+                <ShieldCheck className="h-5 w-5 text-primary" />
                 7 días de garantía total
               </div>
             </div>
-            <div className="mt-8 flex flex-wrap items-center gap-6 text-sm text-muted-foreground">
+            <div className="mt-8 flex flex-wrap items-center gap-6 text-base text-muted-foreground">
               <div className="flex items-center gap-1.5">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-4 w-4 fill-primary text-primary" />
+                  <Star key={i} className="h-5 w-5 fill-primary text-primary" />
                 ))}
                 <span className="ml-1">4.9/5</span>
               </div>
@@ -108,7 +109,7 @@ function SalesPage() {
                 style={{ background: "radial-gradient(circle, oklch(0.78 0.16 82 / 0.5), transparent 70%)" }}
               />
               <img
-                src="https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784285965/de7b698d-e8dc-43cc-848f-d429b67340c8_nzcvwc.png"
+                src={heroImg}
                 alt="Cheesecake Divino - producto"
                 loading="eager"
                 className="relative w-full drop-shadow-[0_30px_50px_rgba(0,0,0,0.5)]"
