@@ -15,6 +15,7 @@ import {
   Lock,
 } from "lucide-react";
 import chefImg from "@/assets/chef.jpg";
+import cheesecakeDrippingVideo from "@/assets/cheesecake-dripping.mp4.asset.json";
 import cheesecakeDrippingImg from "@/assets/cheesecake-dripping.jpg";
 
 const heroImg =
@@ -176,12 +177,13 @@ function SalesPage() {
             </div>
           </div>
           <div className="relative mx-auto w-full max-w-[520px] md:max-w-none">
-            <img
-              src={cheesecakeDrippingImg}
-              alt="Cheesecake con caramelo dorado cayendo por los bordes"
-              width={1024}
-              height={1024}
-              loading="lazy"
+            <video
+              src={cheesecakeDrippingVideo.url}
+              poster={cheesecakeDrippingImg}
+              autoPlay
+              loop
+              muted
+              playsInline
               className="block w-full h-auto rounded-3xl drop-shadow-[0_25px_50px_rgba(0,0,0,0.5)]"
             />
           </div>
