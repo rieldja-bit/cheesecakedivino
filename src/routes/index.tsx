@@ -388,7 +388,7 @@ function SalesPage() {
                   <h3 className="text-2xl font-black sm:text-3xl">{b.title}</h3>
                   <p className="mx-auto mt-3 max-w-xl text-lg text-muted-foreground">{b.desc}</p>
                 </div>
-                <div className="mt-6 flex items-baseline gap-3">
+                <div className="mt-6 flex items-baseline justify-center gap-3">
                   <span className="text-lg text-muted-foreground line-through sm:text-base">De {b.from}</span>
                   <span
                     className="text-2xl font-black"
