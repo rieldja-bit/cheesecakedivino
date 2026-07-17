@@ -246,7 +246,7 @@ function SalesPage() {
                 icon: BookOpen,
               },
               {
-                img: "https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784291601/xxxxxxxxxxxxxxxxxxxxxxxxxxx_dsdw6n.png",
+                img: "https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784295347/cccccc_ap4729.png",
                 title: "Sabores gourmet y ediciones especiales",
                 desc: "Combinaciones modernas, rellenos irresistibles y ediciones estacionales.",
                 icon: Sparkles,
