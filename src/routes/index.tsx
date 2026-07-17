@@ -346,7 +346,7 @@ function SalesPage() {
               Sumás dos recetarios extra que amplían tu catálogo y multiplican tus posibilidades de venta.
             </p>
           </div>
-          <div className="mx-auto mt-12 grid max-w-3xl gap-8">
+          <div className="mt-12 grid gap-8 md:grid-cols-2">
             {[
               {
                 tag: "Bono 1",
@@ -384,11 +384,11 @@ function SalesPage() {
                   alt={b.title}
                   className="mx-auto mt-6 w-full drop-shadow-[0_20px_40px_rgba(0,0,0,0.55)]"
                 />
-                <div className="mt-6 text-center">
+                <div className="mt-6">
                   <h3 className="text-2xl font-black sm:text-3xl">{b.title}</h3>
-                  <p className="mx-auto mt-3 max-w-xl text-lg text-muted-foreground">{b.desc}</p>
+                  <p className="mt-3 text-lg text-muted-foreground">{b.desc}</p>
                 </div>
-                <div className="mt-6 flex items-baseline justify-center gap-3">
+                <div className="mt-6 flex items-baseline gap-3">
                   <span className="text-lg text-muted-foreground line-through sm:text-base">De {b.from}</span>
                   <span
                     className="text-2xl font-black"
