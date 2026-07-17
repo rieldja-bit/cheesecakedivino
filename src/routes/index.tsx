@@ -300,12 +300,14 @@ function SalesPage() {
                 title: "COOKIE SHOTS DE AUTOR",
                 desc: "15 recetas de vasitos de galleta rellenables — crujientes por fuera, tiernos por dentro, listos para viralizarse.",
                 from: "$76",
+                img: "https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784285924/e060ebb6-54a0-4fef-b013-e36bf05aad68_zpz6v9.png",
               },
               {
                 tag: "Bono 2",
                 title: "GALLETAS SIN GLUTEN",
                 desc: "15 galletas artesanales sin gluten, con ingredientes simples y sabores que se destacan en cualquier vitrina.",
                 from: "$54",
+                img: "https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784285915/ac29dc6d-2784-4ba1-b6ed-e8d8024aea2b_zsuwns.png",
               },
             ].map((b) => (
               <div
@@ -324,8 +326,17 @@ function SalesPage() {
                 <span className="text-xs font-bold uppercase tracking-wider text-primary">
                   {b.tag}
                 </span>
-                <h3 className="mt-2 text-2xl font-black">{b.title}</h3>
-                <p className="mt-3 text-sm text-muted-foreground">{b.desc}</p>
+                <div className="mt-4 grid gap-6 sm:grid-cols-[140px_1fr] sm:items-center">
+                  <img
+                    src={b.img}
+                    alt={b.title}
+                    className="w-full max-w-[160px] drop-shadow-[0_15px_30px_rgba(0,0,0,0.5)]"
+                  />
+                  <div>
+                    <h3 className="text-2xl font-black">{b.title}</h3>
+                    <p className="mt-3 text-sm text-muted-foreground">{b.desc}</p>
+                  </div>
+                </div>
                 <div className="mt-6 flex items-baseline gap-3">
                   <span className="text-sm text-muted-foreground line-through">De {b.from}</span>
                   <span
