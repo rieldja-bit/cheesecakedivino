@@ -264,12 +264,16 @@ function SalesPage() {
                 key={c.title}
                 className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card p-6 transition-transform hover:-translate-y-1"
               >
-                <div className="relative flex h-72 items-center justify-center sm:h-56 md:h-48">
+                <div className="relative flex items-center justify-center md:h-48">
                   <div
                     className="absolute inset-0 rounded-xl opacity-30 blur-2xl"
                     style={{ background: "radial-gradient(circle, oklch(0.78 0.16 82 / 0.4), transparent 70%)" }}
                   />
-                  <img src={c.img} alt={c.title} className="relative h-full w-auto object-contain" />
+                  <img
+                    src={c.img}
+                    alt={c.title}
+                    className="relative w-full drop-shadow-[0_15px_30px_rgba(0,0,0,0.5)] md:h-full md:w-auto md:object-contain"
+                  />
                 </div>
                 <c.icon className="mt-4 h-6 w-6 text-primary" />
                 <h3 className="mt-3 text-xl font-bold">{c.title}</h3>
