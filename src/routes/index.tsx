@@ -176,7 +176,7 @@ function SalesPage() {
           </div>
           <div className="relative mx-auto w-full max-w-[520px] md:max-w-none">
             <img
-              src="https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784291601/xxxxxxxxxxxxxxxxxxxxxxxxxxx_dsdw6n.png"
+              src="https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784295347/cccccc_ap4729.png"
               alt="Recetario Cheesecake Divino"
               loading="lazy"
               className="block w-full h-auto drop-shadow-[0_25px_50px_rgba(0,0,0,0.5)]"
