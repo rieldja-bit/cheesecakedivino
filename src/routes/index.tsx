@@ -105,16 +105,16 @@ function SalesPage() {
             </div>
           </div>
           <div className="order-1 md:order-2">
-            <div className="relative mx-auto max-w-[260px] sm:max-w-sm md:max-w-md">
+            <div className="relative mx-auto w-full max-w-md sm:max-w-lg md:max-w-none md:scale-110 lg:scale-125">
               <div
-                className="absolute -inset-8 rounded-full blur-3xl opacity-50"
+                className="absolute -inset-12 rounded-full blur-3xl opacity-60"
                 style={{ background: "radial-gradient(circle, oklch(0.78 0.16 82 / 0.5), transparent 70%)" }}
               />
               <img
                 src={heroImg}
                 alt="Cheesecake Divino - producto"
                 loading="eager"
-                className="relative w-full drop-shadow-[0_30px_50px_rgba(0,0,0,0.5)]"
+                className="relative w-full drop-shadow-[0_40px_60px_rgba(0,0,0,0.6)]"
               />
             </div>
           </div>
