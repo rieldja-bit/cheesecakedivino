@@ -79,10 +79,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Cheesecake Divino — El recetario que convierte un postre en negocio" },
       { name: "description", content: "Cheesecake Divino: 25 recetas paso a paso, sabores gourmet y una fórmula clara de precios para vender desde el primer día. Sin horno, sin experiencia, sin excusas." },
-      { property: "og:title", content: "Cheesecake Divino — Del molde al negocio" },
-      { property: "og:description", content: "25 recetas + 2 bonos. La forma más simple de armar un emprendimiento dulce y rentable desde casa." },
+      { property: "og:title", content: "Cheesecake Divino — El recetario que convierte un postre en negocio" },
+      { property: "og:description", content: "Cheesecake Divino: 25 recetas paso a paso, sabores gourmet y una fórmula clara de precios para vender desde el primer día. Sin horno, sin experiencia, sin excusas." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Cheesecake Divino — El recetario que convierte un postre en negocio" },
+      { name: "twitter:description", content: "Cheesecake Divino: 25 recetas paso a paso, sabores gourmet y una fórmula clara de precios para vender desde el primer día. Sin horno, sin experiencia, sin excusas." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/454c79b7-e40a-4123-ac14-66f663c66b06/id-preview-f39e6782--73ba5fd9-bf3f-41f9-bd91-49b6da399aff.lovable.app-1784288246206.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/454c79b7-e40a-4123-ac14-66f663c66b06/id-preview-f39e6782--73ba5fd9-bf3f-41f9-bd91-49b6da399aff.lovable.app-1784288246206.png" },
     ],
     links: [
       {
