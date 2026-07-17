@@ -49,7 +49,7 @@ function SalesPage() {
         style={{ background: "linear-gradient(90deg, oklch(0.35 0.14 20), oklch(0.28 0.11 20))" }}
       >
         <Clock className="inline-block h-4 w-4 mr-2 -mt-0.5" />
-        ¡Últimas horas! Esta oferta termina hoy. Aprovechá el descuento antes de que desaparezca.
+        Promo por tiempo limitado — el precio vuelve a subir en las próximas horas.
       </div>
 
       {/* HERO */}
