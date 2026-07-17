@@ -65,7 +65,7 @@ function SalesPage() {
               "radial-gradient(circle at 20% 30%, oklch(0.78 0.16 82 / 0.25), transparent 50%), radial-gradient(circle at 80% 70%, oklch(0.35 0.14 20 / 0.4), transparent 60%)",
           }}
         />
-        <div className="relative mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:py-24 md:grid-cols-2 md:items-center">
+        <div className="relative mx-auto grid max-w-6xl gap-8 px-4 pt-6 pb-16 sm:pt-10 sm:pb-24 md:grid-cols-[1fr_1.25fr] md:items-center md:gap-12 md:pt-24">
           <div className="order-2 md:order-1">
             <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-semibold uppercase tracking-wider text-primary">
               <Flame className="h-4 w-4" /> Best seller · Recetario premium
@@ -105,16 +105,16 @@ function SalesPage() {
             </div>
           </div>
           <div className="order-1 md:order-2">
-            <div className="relative mx-auto w-full max-w-md sm:max-w-lg md:max-w-none md:scale-110 lg:scale-125">
+            <div className="relative mx-auto w-full max-w-[520px] sm:max-w-[640px] md:max-w-none">
               <div
-                className="absolute -inset-12 rounded-full blur-3xl opacity-60"
+                className="absolute -inset-16 rounded-full blur-3xl opacity-60"
                 style={{ background: "radial-gradient(circle, oklch(0.78 0.16 82 / 0.5), transparent 70%)" }}
               />
               <img
                 src={heroImg}
                 alt="Cheesecake Divino - producto"
                 loading="eager"
-                className="relative w-full drop-shadow-[0_40px_60px_rgba(0,0,0,0.6)]"
+                className="relative w-full md:scale-[1.15] lg:scale-[1.25] origin-center drop-shadow-[0_45px_70px_rgba(0,0,0,0.65)]"
               />
             </div>
           </div>
