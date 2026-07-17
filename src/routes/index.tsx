@@ -47,7 +47,7 @@ function CTA({ children, className = "" }: { children: React.ReactNode; classNam
   );
 }
 
-function SalesPage() {
+export function SalesPage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Top urgency bar */}
