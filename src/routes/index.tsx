@@ -176,12 +176,12 @@ function SalesPage() {
               <CTA>Empezar ahora</CTA>
             </div>
           </div>
-          <div className="relative left-1/2 w-[calc(100vw-0.25rem)] -translate-x-1/2 overflow-hidden md:left-auto md:w-full md:translate-x-0 md:overflow-visible">
+          <div className="relative left-1/2 aspect-square w-[calc(100vw-0.25rem)] -translate-x-1/2 overflow-hidden md:left-auto md:aspect-auto md:w-full md:translate-x-0 md:overflow-visible">
             <img
               src="https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784285994/87db9b49-7d4a-493e-8325-9f4dd98da4ac_xgtdmy.png"
               alt="Recetario Cheesecake Divino"
               loading="lazy"
-              className="h-[calc(100vw-0.25rem)] w-auto max-w-none object-left drop-shadow-[0_25px_50px_rgba(0,0,0,0.5)] md:h-auto md:w-full md:max-w-full"
+              className="h-[110vw] w-auto max-w-none -translate-y-[3vw] object-left drop-shadow-[0_25px_50px_rgba(0,0,0,0.5)] md:h-auto md:w-full md:max-w-full md:translate-y-0"
             />
           </div>
         </div>
