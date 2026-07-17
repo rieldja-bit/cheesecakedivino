@@ -14,6 +14,7 @@ import {
   Gift,
   Lock,
 } from "lucide-react";
+import chefImg from "@/assets/chef.jpg";
 
 export const Route = createFileRoute("/")({
   component: SalesPage,
@@ -64,7 +65,7 @@ function SalesPage() {
         <div className="relative mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:py-24 md:grid-cols-2 md:items-center">
           <div className="order-2 md:order-1">
             <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary">
-              <Flame className="h-3.5 w-3.5" /> Nuevo · Edición 2026
+              <Flame className="h-3.5 w-3.5" /> Best seller · Recetario premium
             </span>
             <h1 className="mt-5 text-4xl font-black leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
               El recetario{" "}
@@ -101,7 +102,7 @@ function SalesPage() {
             </div>
           </div>
           <div className="order-1 md:order-2">
-            <div className="relative mx-auto max-w-md">
+            <div className="relative mx-auto max-w-[260px] sm:max-w-sm md:max-w-md">
               <div
                 className="absolute -inset-8 rounded-full blur-3xl opacity-50"
                 style={{ background: "radial-gradient(circle, oklch(0.78 0.16 82 / 0.5), transparent 70%)" }}
@@ -109,6 +110,7 @@ function SalesPage() {
               <img
                 src="https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784285965/de7b698d-e8dc-43cc-848f-d429b67340c8_nzcvwc.png"
                 alt="Cheesecake Divino - producto"
+                loading="eager"
                 className="relative w-full drop-shadow-[0_30px_50px_rgba(0,0,0,0.5)]"
               />
             </div>
@@ -175,8 +177,54 @@ function SalesPage() {
             <img
               src="https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784285994/87db9b49-7d4a-493e-8325-9f4dd98da4ac_xgtdmy.png"
               alt="Recetario Cheesecake Divino"
-              className="w-full drop-shadow-[0_25px_50px_rgba(0,0,0,0.5)]"
+              loading="lazy"
+              className="mx-auto w-full max-w-xs sm:max-w-sm md:max-w-full drop-shadow-[0_25px_50px_rgba(0,0,0,0.5)]"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* CHEF */}
+      <section className="border-y border-border/50 bg-card/40 py-20">
+        <div className="mx-auto grid max-w-6xl gap-10 px-4 md:grid-cols-2 md:items-center">
+          <div className="relative mx-auto w-full max-w-xs sm:max-w-sm md:max-w-md">
+            <div
+              className="absolute -inset-6 rounded-3xl blur-3xl opacity-40"
+              style={{ background: "radial-gradient(circle, oklch(0.78 0.16 82 / 0.5), transparent 70%)" }}
+            />
+            <img
+              src={chefImg}
+              alt="Chef pastelera detrás del recetario Cheesecake Divino"
+              width={1024}
+              height={1280}
+              loading="lazy"
+              className="relative w-full rounded-3xl object-cover shadow-[0_25px_60px_-15px_rgba(0,0,0,0.6)]"
+            />
+          </div>
+          <div>
+            <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary">
+              <Sparkles className="h-3.5 w-3.5" /> Detrás del recetario
+            </span>
+            <h2 className="mt-5 text-3xl font-black tracking-tight sm:text-4xl">
+              Recetas probadas por una pastelera profesional
+            </h2>
+            <p className="mt-5 text-lg text-muted-foreground">
+              Cada receta fue desarrollada, ajustada y probada en cocina real hasta lograr la
+              textura, el sabor y la presentación que enamoran. Nada de fórmulas copiadas de
+              internet: es el mismo paso a paso que usan quienes ya viven de esto.
+            </p>
+            <ul className="mt-6 space-y-3">
+              {[
+                "Técnicas simplificadas para que cualquiera pueda replicarlas.",
+                "Cantidades exactas y trucos de textura en cada receta.",
+                "Consejos de presentación estilo pastelería boutique.",
+              ].map((t) => (
+                <li key={t} className="flex gap-3">
+                  <Check className="mt-1 h-5 w-5 shrink-0 text-primary" strokeWidth={3} />
+                  <span className="text-foreground/90">{t}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
