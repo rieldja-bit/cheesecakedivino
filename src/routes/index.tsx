@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, redirect } from "@tanstack/react-router";
 import {
   Clock,
   Flame,
@@ -23,6 +23,9 @@ const heroImg =
   "https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784287649/0893d6ad-062f-4ff9-83f2-a6a93e93f685_rhsumv.png";
 
 export const Route = createFileRoute("/")({
+  beforeLoad: () => {
+    throw redirect({ to: "/cheescake-es" });
+  },
   component: SalesPage,
 });
 
@@ -47,7 +50,7 @@ function CTA({ children, className = "" }: { children: React.ReactNode; classNam
   );
 }
 
-function SalesPage() {
+export function SalesPage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Top urgency bar */}
