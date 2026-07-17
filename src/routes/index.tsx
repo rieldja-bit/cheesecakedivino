@@ -30,7 +30,7 @@ function CTA({ children, className = "" }: { children: React.ReactNode; classNam
     <a
       href={CHECKOUT_URL}
       className={
-        "group relative inline-flex items-center justify-center gap-2 rounded-full px-8 py-4 text-base font-bold uppercase tracking-wide text-primary-foreground shadow-[0_10px_40px_-10px_oklch(0.78_0.16_82/0.6)] transition-all hover:scale-[1.02] hover:shadow-[0_15px_50px_-10px_oklch(0.78_0.16_82/0.8)] sm:text-lg " +
+        "group relative inline-flex items-center justify-center gap-2 rounded-full px-8 py-5 text-lg font-bold uppercase tracking-wide text-primary-foreground shadow-[0_10px_40px_-10px_oklch(0.78_0.16_82/0.6)] transition-all hover:scale-[1.02] hover:shadow-[0_15px_50px_-10px_oklch(0.78_0.16_82/0.8)] sm:px-10 sm:py-4 sm:text-lg " +
         className
       }
       style={{
