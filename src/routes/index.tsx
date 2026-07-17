@@ -65,22 +65,20 @@ function SalesPage() {
               "radial-gradient(circle at 20% 30%, oklch(0.78 0.16 82 / 0.25), transparent 50%), radial-gradient(circle at 80% 70%, oklch(0.35 0.14 20 / 0.4), transparent 60%)",
           }}
         />
-        <div className="relative mx-auto flex max-w-5xl flex-col items-center gap-10 px-4 pt-6 pb-16 text-center sm:px-6 sm:pt-10 sm:pb-24 md:gap-14 md:pt-16">
-          <div className="w-full">
-            <div className="relative mx-auto w-full max-w-[560px] sm:max-w-[760px] md:max-w-[900px]">
-              <div
-                className="absolute -inset-16 rounded-full blur-3xl opacity-60"
-                style={{ background: "radial-gradient(circle, oklch(0.78 0.16 82 / 0.5), transparent 70%)" }}
-              />
-              <img
-                src={heroImg}
-                alt="Cheesecake Divino - producto"
-                loading="eager"
-                className="relative w-full drop-shadow-[0_45px_70px_rgba(0,0,0,0.65)]"
-              />
-            </div>
+        <div className="relative flex flex-col items-center gap-10 pt-6 pb-16 text-center sm:pt-10 sm:pb-24 md:gap-14 md:pt-12">
+          <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw]">
+            <div
+              className="pointer-events-none absolute inset-0 opacity-60 blur-3xl"
+              style={{ background: "radial-gradient(circle at 50% 50%, oklch(0.78 0.16 82 / 0.35), transparent 65%)" }}
+            />
+            <img
+              src={heroImg}
+              alt="Cheesecake Divino - producto"
+              loading="eager"
+              className="relative block w-full h-auto drop-shadow-[0_45px_70px_rgba(0,0,0,0.65)]"
+            />
           </div>
-          <div className="flex flex-col items-center">
+          <div className="mx-auto flex max-w-5xl flex-col items-center px-4 sm:px-6">
             <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-base font-semibold uppercase tracking-wider text-primary sm:text-sm">
               <Flame className="h-4 w-4" /> Best seller · Recetario premium
             </span>
