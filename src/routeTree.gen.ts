@@ -9,9 +9,15 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as CheescakeUsRouteImport } from './routes/cheescake-us'
 import { Route as CheescakeEsRouteImport } from './routes/cheescake-es'
 import { Route as IndexRouteImport } from './routes/index'
 
+const CheescakeUsRoute = CheescakeUsRouteImport.update({
+  id: '/cheescake-us',
+  path: '/cheescake-us',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CheescakeEsRoute = CheescakeEsRouteImport.update({
   id: '/cheescake-es',
   path: '/cheescake-es',
@@ -26,31 +32,42 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/cheescake-es': typeof CheescakeEsRoute
+  '/cheescake-us': typeof CheescakeUsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/cheescake-es': typeof CheescakeEsRoute
+  '/cheescake-us': typeof CheescakeUsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/cheescake-es': typeof CheescakeEsRoute
+  '/cheescake-us': typeof CheescakeUsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/cheescake-es'
+  fullPaths: '/' | '/cheescake-es' | '/cheescake-us'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/cheescake-es'
-  id: '__root__' | '/' | '/cheescake-es'
+  to: '/' | '/cheescake-es' | '/cheescake-us'
+  id: '__root__' | '/' | '/cheescake-es' | '/cheescake-us'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CheescakeEsRoute: typeof CheescakeEsRoute
+  CheescakeUsRoute: typeof CheescakeUsRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/cheescake-us': {
+      id: '/cheescake-us'
+      path: '/cheescake-us'
+      fullPath: '/cheescake-us'
+      preLoaderRoute: typeof CheescakeUsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/cheescake-es': {
       id: '/cheescake-es'
       path: '/cheescake-es'
@@ -71,6 +88,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CheescakeEsRoute: CheescakeEsRoute,
+  CheescakeUsRoute: CheescakeUsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
