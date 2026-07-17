@@ -66,7 +66,7 @@ function SalesPage() {
           }}
         />
         <div className="relative flex flex-col items-center gap-10 pt-6 pb-16 text-center sm:pt-10 sm:pb-24 md:gap-14 md:pt-12">
-          <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw]">
+          <div className="relative left-1/2 w-screen -translate-x-1/2">
             <div
               className="pointer-events-none absolute inset-0 opacity-60 blur-3xl"
               style={{ background: "radial-gradient(circle at 50% 50%, oklch(0.78 0.16 82 / 0.35), transparent 65%)" }}
