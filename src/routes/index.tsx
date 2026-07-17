@@ -65,9 +65,9 @@ function SalesPage() {
               "radial-gradient(circle at 20% 30%, oklch(0.78 0.16 82 / 0.25), transparent 50%), radial-gradient(circle at 80% 70%, oklch(0.35 0.14 20 / 0.4), transparent 60%)",
           }}
         />
-        <div className="relative mx-auto flex max-w-5xl flex-col items-center gap-10 px-1 pt-6 pb-16 text-center sm:px-4 sm:pt-10 sm:pb-24 md:gap-14 md:pt-16">
+        <div className="relative mx-auto flex max-w-5xl flex-col items-center gap-10 px-4 pt-6 pb-16 text-center sm:px-6 sm:pt-10 sm:pb-24 md:gap-14 md:pt-16">
           <div className="w-full">
-            <div className="relative left-1/2 mx-auto w-[calc(100vw-0.25rem)] max-w-none -translate-x-1/2 sm:left-auto sm:w-full sm:max-w-[760px] sm:translate-x-0 md:max-w-[900px]">
+            <div className="relative mx-auto w-full max-w-[560px] sm:max-w-[760px] md:max-w-[900px]">
               <div
                 className="absolute -inset-16 rounded-full blur-3xl opacity-60"
                 style={{ background: "radial-gradient(circle, oklch(0.78 0.16 82 / 0.5), transparent 70%)" }}
@@ -176,7 +176,7 @@ function SalesPage() {
               <CTA>Empezar ahora</CTA>
             </div>
           </div>
-          <div className="relative left-1/2 w-screen -translate-x-1/2 md:left-auto md:w-full md:translate-x-0">
+          <div className="relative mx-auto w-full max-w-[520px] md:max-w-none">
             <img
               src="https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784291601/xxxxxxxxxxxxxxxxxxxxxxxxxxx_dsdw6n.png"
               alt="Recetario Cheesecake Divino"
@@ -262,9 +262,9 @@ function SalesPage() {
             ].map((c) => (
               <div
                 key={c.title}
-                className="group relative rounded-2xl border border-border/60 bg-card p-2 sm:p-6 transition-transform hover:-translate-y-1"
+                className="group relative rounded-2xl border border-border/60 bg-card p-4 sm:p-6 transition-transform hover:-translate-y-1"
               >
-                <div className="relative -mx-2 flex items-center justify-center sm:mx-0 md:h-48">
+                <div className="relative flex items-center justify-center md:h-48">
                   <div
                     className="absolute inset-0 rounded-xl opacity-30 blur-2xl"
                     style={{ background: "radial-gradient(circle, oklch(0.78 0.16 82 / 0.4), transparent 70%)" }}
@@ -277,7 +277,7 @@ function SalesPage() {
                 </div>
                 <c.icon className="mt-5 h-6 w-6 text-primary sm:mt-4" />
                 <h3 className="mt-3 text-xl font-bold">{c.title}</h3>
-                <p className="mt-2 px-2 text-base text-muted-foreground sm:px-0">{c.desc}</p>
+                <p className="mt-2 text-base text-muted-foreground">{c.desc}</p>
               </div>
             ))}
           </div>
