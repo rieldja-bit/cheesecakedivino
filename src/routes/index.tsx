@@ -311,11 +311,11 @@ function SalesPage() {
             <div key={t.name} className="rounded-2xl border border-border/60 bg-card p-6">
               <div className="flex gap-1">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-4 w-4 fill-primary text-primary" />
+                  <Star key={i} className="h-5 w-5 fill-primary text-primary" />
                 ))}
               </div>
-              <p className="mt-4 text-foreground/90">"{t.text}"</p>
-              <p className="mt-4 text-sm font-semibold text-primary">— {t.name}</p>
+              <p className="mt-4 text-lg text-foreground/90">"{t.text}"</p>
+              <p className="mt-4 text-base font-semibold text-primary">— {t.name}</p>
             </div>
           ))}
         </div>
@@ -334,11 +334,11 @@ function SalesPage() {
       >
         <div className="mx-auto max-w-6xl px-4">
           <div className="text-center">
-            <span className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary">
-              <Gift className="h-3.5 w-3.5" /> Incluidos sin costo
+            <span className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-1.5 text-sm font-semibold uppercase tracking-wider text-primary">
+              <Gift className="h-4 w-4" /> Incluidos sin costo
             </span>
             <h2 className="mt-5 text-3xl font-black tracking-tight sm:text-4xl">Dos bonos que suman valor real</h2>
-            <p className="mx-auto mt-3 max-w-2xl text-muted-foreground">
+            <p className="mx-auto mt-3 max-w-2xl text-lg text-muted-foreground">
               Sumás dos recetarios extra que amplían tu catálogo y multiplican tus posibilidades de venta.
             </p>
           </div>
@@ -372,7 +372,7 @@ function SalesPage() {
                   className="absolute -right-10 -top-10 h-40 w-40 rounded-full opacity-30 blur-3xl"
                   style={{ background: "oklch(0.78 0.16 82)" }}
                 />
-                <span className="text-xs font-bold uppercase tracking-wider text-primary">
+                <span className="text-sm font-bold uppercase tracking-wider text-primary">
                   {b.tag}
                 </span>
                 <div className="mt-4 grid gap-6 sm:grid-cols-[140px_1fr] sm:items-center">
@@ -383,11 +383,11 @@ function SalesPage() {
                   />
                   <div>
                     <h3 className="text-2xl font-black">{b.title}</h3>
-                    <p className="mt-3 text-sm text-muted-foreground">{b.desc}</p>
+                    <p className="mt-3 text-base text-muted-foreground">{b.desc}</p>
                   </div>
                 </div>
                 <div className="mt-6 flex items-baseline gap-3">
-                  <span className="text-sm text-muted-foreground line-through">De {b.from}</span>
+                  <span className="text-base text-muted-foreground line-through">De {b.from}</span>
                   <span
                     className="text-2xl font-black"
                     style={{
@@ -408,7 +408,7 @@ function SalesPage() {
       {/* ANCORAGEM / OFERTA */}
       <section id="checkout" className="mx-auto max-w-6xl px-4 py-20">
         <div className="text-center">
-          <span className="inline-block rounded-full bg-destructive/20 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-destructive-foreground">
+          <span className="inline-block rounded-full bg-destructive/20 px-4 py-1.5 text-sm font-bold uppercase tracking-wider text-destructive-foreground">
             🔥 Precio de lanzamiento
           </span>
         </div>
@@ -427,8 +427,9 @@ function SalesPage() {
                 style={{ background: "radial-gradient(circle, oklch(0.78 0.16 82 / 0.6), transparent 70%)" }}
               />
               <img
-                src="https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784285965/de7b698d-e8dc-43cc-848f-d429b67340c8_nzcvwc.png"
+                src={heroImg}
                 alt="Recetario Cheesecake Divino"
+                loading="lazy"
                 className="relative w-full drop-shadow-[0_25px_50px_rgba(0,0,0,0.5)]"
               />
             </div>
@@ -456,11 +457,11 @@ function SalesPage() {
                 ].map((t) => (
                   <li key={t} className="flex items-center gap-3">
                     <Check className="h-5 w-5 shrink-0 text-primary" strokeWidth={3} />
-                    <span className="text-foreground/90">{t}</span>
+                    <span className="text-lg text-foreground/90">{t}</span>
                   </li>
                 ))}
               </ul>
-              <p className="mt-6 text-sm text-muted-foreground">
+              <p className="mt-6 text-base text-muted-foreground">
                 Invertís menos que un café con medialunas y te llevás un negocio para toda la vida.
               </p>
               <div className="mt-8 flex items-baseline gap-3">
@@ -469,7 +470,7 @@ function SalesPage() {
                 </span>
               </div>
               <div className="mt-2 flex items-baseline gap-3">
-                <span className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+                <span className="text-base font-semibold uppercase tracking-wider text-muted-foreground">
                   Precio de hoy
                 </span>
                 <span
@@ -487,7 +488,7 @@ function SalesPage() {
               <div className="mt-8">
                 <CTA>Sí, lo quiero a este precio</CTA>
               </div>
-              <p className="mt-4 text-sm text-muted-foreground">
+              <p className="mt-4 text-base text-muted-foreground">
                 <strong className="text-foreground">Un solo pago</strong> · Acceso inmediato ·{" "}
                 <strong className="text-foreground">Sin suscripciones</strong>.
               </p>
@@ -504,18 +505,18 @@ function SalesPage() {
             <ShieldCheck className="h-8 w-8 text-primary-foreground" strokeWidth={2.5} />
           </div>
           <h3 className="mt-4 text-xl font-black">7 días para probarlo sin riesgo</h3>
-          <p className="mx-auto mt-2 max-w-xl text-sm text-muted-foreground">
+          <p className="mx-auto mt-2 max-w-xl text-base text-muted-foreground">
             Si el recetario no cumple con lo que te prometemos, escribinos y te devolvemos cada
             centavo. Sin preguntas, sin trabas.
           </p>
-          <div className="mt-6 flex items-center justify-center gap-2 text-sm text-muted-foreground">
-            <Lock className="h-4 w-4 text-primary" />
+          <div className="mt-6 flex items-center justify-center gap-2 text-base text-muted-foreground">
+            <Lock className="h-5 w-5 text-primary" />
             Pago 100% seguro
           </div>
         </div>
       </section>
 
-      <footer className="border-t border-border/50 py-8 text-center text-xs text-muted-foreground">
+      <footer className="border-t border-border/50 py-8 text-center text-sm text-muted-foreground">
         © {new Date().getFullYear()} Cheesecake Divino. Todos los derechos reservados.
       </footer>
     </div>
