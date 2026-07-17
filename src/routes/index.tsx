@@ -242,13 +242,13 @@ function SalesPage() {
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {[
               {
-                img: "https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784291601/xxxxxxxxxxxxxxxxxxxxxxxxxxx_dsdw6n.png",
+                img: "https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784285965/de7b698d-e8dc-43cc-848f-d429b67340c8_nzcvwc.png",
                 title: "Recetas base",
                 desc: "25 versiones probadas y explicadas al detalle. De la mezcla al último detalle.",
                 icon: BookOpen,
               },
               {
-                img: "https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784285994/87db9b49-7d4a-493e-8325-9f4dd98da4ac_xgtdmy.png",
+                img: "https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784291601/xxxxxxxxxxxxxxxxxxxxxxxxxxx_dsdw6n.png",
                 title: "Sabores gourmet y ediciones especiales",
                 desc: "Combinaciones modernas, rellenos irresistibles y ediciones estacionales.",
                 icon: Sparkles,
