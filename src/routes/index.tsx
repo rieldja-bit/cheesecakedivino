@@ -81,7 +81,7 @@ function SalesPage() {
             </div>
           </div>
           <div className="flex flex-col items-center">
-            <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-semibold uppercase tracking-wider text-primary">
+            <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-base font-semibold uppercase tracking-wider text-primary sm:text-sm">
               <Flame className="h-4 w-4" /> Best seller · Recetario premium
             </span>
             <h1 className="mt-5 max-w-3xl text-4xl font-black leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
@@ -205,7 +205,7 @@ function SalesPage() {
             />
           </div>
           <div>
-            <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-semibold uppercase tracking-wider text-primary">
+            <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-base font-semibold uppercase tracking-wider text-primary sm:text-sm">
               <Sparkles className="h-4 w-4" /> Detrás del recetario
             </span>
             <h2 className="mt-5 text-3xl font-black tracking-tight sm:text-4xl">
@@ -336,7 +336,7 @@ function SalesPage() {
       >
         <div className="mx-auto max-w-6xl px-4">
           <div className="text-center">
-            <span className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-1.5 text-sm font-semibold uppercase tracking-wider text-primary">
+            <span className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-1.5 text-base font-semibold uppercase tracking-wider text-primary sm:text-sm">
               <Gift className="h-4 w-4" /> Incluidos sin costo
             </span>
             <h2 className="mt-5 text-3xl font-black tracking-tight sm:text-4xl">Dos bonos que suman valor real</h2>
@@ -377,19 +377,19 @@ function SalesPage() {
                 <span className="text-sm font-bold uppercase tracking-wider text-primary">
                   {b.tag}
                 </span>
-                <div className="mt-4 grid gap-6 sm:grid-cols-[140px_1fr] sm:items-center">
+                <div className="mt-4 grid gap-6 sm:grid-cols-[160px_1fr] sm:items-center">
                   <img
                     src={b.img}
                     alt={b.title}
-                    className="w-full max-w-[160px] drop-shadow-[0_15px_30px_rgba(0,0,0,0.5)]"
+                    className="mx-auto w-full max-w-[360px] drop-shadow-[0_15px_30px_rgba(0,0,0,0.5)] sm:max-w-[180px]"
                   />
                   <div>
                     <h3 className="text-2xl font-black">{b.title}</h3>
-                    <p className="mt-3 text-base text-muted-foreground">{b.desc}</p>
+                    <p className="mt-3 text-lg text-muted-foreground sm:text-base">{b.desc}</p>
                   </div>
                 </div>
                 <div className="mt-6 flex items-baseline gap-3">
-                  <span className="text-base text-muted-foreground line-through">De {b.from}</span>
+                  <span className="text-lg text-muted-foreground line-through sm:text-base">De {b.from}</span>
                   <span
                     className="text-2xl font-black"
                     style={{
@@ -410,7 +410,7 @@ function SalesPage() {
       {/* ANCORAGEM / OFERTA */}
       <section id="checkout" className="mx-auto max-w-6xl px-4 py-20">
         <div className="text-center">
-          <span className="inline-block rounded-full bg-destructive/20 px-4 py-1.5 text-sm font-bold uppercase tracking-wider text-destructive-foreground">
+          <span className="inline-block rounded-full bg-destructive/20 px-4 py-1.5 text-base font-bold uppercase tracking-wider text-destructive-foreground sm:text-sm">
             🔥 Precio de lanzamiento
           </span>
         </div>
@@ -463,7 +463,7 @@ function SalesPage() {
                   </li>
                 ))}
               </ul>
-              <p className="mt-6 text-base text-muted-foreground">
+              <p className="mt-6 text-lg text-muted-foreground sm:text-base">
                 Invertís menos que un café con medialunas y te llevás un negocio para toda la vida.
               </p>
               <div className="mt-8 flex items-baseline gap-3">
@@ -472,7 +472,7 @@ function SalesPage() {
                 </span>
               </div>
               <div className="mt-2 flex items-baseline gap-3">
-                <span className="text-base font-semibold uppercase tracking-wider text-muted-foreground">
+                <span className="text-lg font-semibold uppercase tracking-wider text-muted-foreground sm:text-base">
                   Precio de hoy
                 </span>
                 <span
@@ -490,7 +490,7 @@ function SalesPage() {
               <div className="mt-8">
                 <CTA>Sí, lo quiero a este precio</CTA>
               </div>
-              <p className="mt-4 text-base text-muted-foreground">
+              <p className="mt-4 text-lg text-muted-foreground sm:text-base">
                 <strong className="text-foreground">Un solo pago</strong> · Acceso inmediato ·{" "}
                 <strong className="text-foreground">Sin suscripciones</strong>.
               </p>
@@ -507,18 +507,18 @@ function SalesPage() {
             <ShieldCheck className="h-8 w-8 text-primary-foreground" strokeWidth={2.5} />
           </div>
           <h3 className="mt-4 text-xl font-black">7 días para probarlo sin riesgo</h3>
-          <p className="mx-auto mt-2 max-w-xl text-base text-muted-foreground">
+          <p className="mx-auto mt-2 max-w-xl text-lg text-muted-foreground sm:text-base">
             Si el recetario no cumple con lo que te prometemos, escribinos y te devolvemos cada
             centavo. Sin preguntas, sin trabas.
           </p>
-          <div className="mt-6 flex items-center justify-center gap-2 text-base text-muted-foreground">
+          <div className="mt-6 flex items-center justify-center gap-2 text-lg text-muted-foreground sm:text-base">
             <Lock className="h-5 w-5 text-primary" />
             Pago 100% seguro
           </div>
         </div>
       </section>
 
-      <footer className="border-t border-border/50 py-8 text-center text-sm text-muted-foreground">
+      <footer className="border-t border-border/50 py-8 text-center text-base text-muted-foreground sm:text-sm">
         © {new Date().getFullYear()} Cheesecake Divino. Todos los derechos reservados.
       </footer>
     </div>
