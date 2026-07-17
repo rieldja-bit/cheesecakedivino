@@ -23,7 +23,7 @@ export const Route = createFileRoute("/")({
   component: SalesPage,
 });
 
-const CHECKOUT_URL = "#checkout";
+const CHECKOUT_URL = "https://pay.hotmart.com/M106778531G?checkoutMode=10";
 
 function CTA({ children, className = "" }: { children: React.ReactNode; className?: string }) {
   return (
