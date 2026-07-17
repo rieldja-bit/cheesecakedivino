@@ -158,14 +158,14 @@ function SalesPage() {
                 "Dominar la decoración, el emplatado y la entrega con acabado profesional.",
                 "Montar un emprendimiento desde tu cocina, con inversión mínima y margen alto.",
               ].map((t) => (
-                <li key={t} className="flex gap-3">
+                <li key={t} className="flex min-w-0 gap-3">
                   <span
                     className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full"
                     style={{ background: "linear-gradient(135deg, oklch(0.85 0.17 88), oklch(0.62 0.15 70))" }}
                   >
                     <Check className="h-4 w-4 text-primary-foreground" strokeWidth={3} />
                   </span>
-                  <span className="text-lg text-foreground/90">{t}</span>
+                  <span className="min-w-0 text-lg text-foreground/90">{t}</span>
                 </li>
               ))}
             </ul>
