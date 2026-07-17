@@ -176,12 +176,12 @@ function SalesPage() {
               <CTA>Empezar ahora</CTA>
             </div>
           </div>
-          <div className="relative -mx-4 md:mx-0">
+          <div className="relative left-1/2 w-[calc(100vw-0.25rem)] -translate-x-1/2 overflow-hidden md:left-auto md:w-full md:translate-x-0 md:overflow-visible">
             <img
               src="https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784285994/87db9b49-7d4a-493e-8325-9f4dd98da4ac_xgtdmy.png"
               alt="Recetario Cheesecake Divino"
               loading="lazy"
-              className="mx-auto w-[calc(100vw-0.5rem)] max-w-none drop-shadow-[0_25px_50px_rgba(0,0,0,0.5)] sm:w-full md:max-w-full"
+              className="h-[calc(100vw-0.25rem)] w-auto max-w-none object-left drop-shadow-[0_25px_50px_rgba(0,0,0,0.5)] md:h-auto md:w-full md:max-w-full"
             />
           </div>
         </div>
@@ -259,12 +259,21 @@ function SalesPage() {
                 desc: "Fórmula clara para cobrar bien y vender rápido, sin regalar tu trabajo.",
                 icon: DollarSign,
               },
-            ].map((c) => (
+            ].map((c) => {
+              const needsMobileCrop = c.title === "Recetas base";
+
+              return (
               <div
                 key={c.title}
                 className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card p-2 sm:p-6 transition-transform hover:-translate-y-1"
               >
-                <div className="relative -mx-2 flex items-center justify-center sm:mx-0 md:h-48">
+                <div
+                  className={
+                    needsMobileCrop
+                      ? "relative -mx-2 aspect-square overflow-hidden sm:mx-0 md:flex md:h-48 md:items-center md:justify-center md:overflow-visible"
+                      : "relative -mx-2 flex items-center justify-center sm:mx-0 md:h-48"
+                  }
+                >
                   <div
                     className="absolute inset-0 rounded-xl opacity-30 blur-2xl"
                     style={{ background: "radial-gradient(circle, oklch(0.78 0.16 82 / 0.4), transparent 70%)" }}
@@ -272,14 +281,19 @@ function SalesPage() {
                   <img
                     src={c.img}
                     alt={c.title}
-                    className="relative w-[calc(100%+1rem)] max-w-none drop-shadow-[0_15px_30px_rgba(0,0,0,0.5)] sm:w-full md:h-full md:w-auto md:object-contain"
+                    className={
+                      needsMobileCrop
+                        ? "relative w-[122%] max-w-none -translate-x-[9%] -translate-y-[6%] drop-shadow-[0_15px_30px_rgba(0,0,0,0.5)] md:h-full md:w-auto md:translate-x-0 md:translate-y-0 md:object-contain"
+                        : "relative w-[calc(100%+1rem)] max-w-none drop-shadow-[0_15px_30px_rgba(0,0,0,0.5)] sm:w-full md:h-full md:w-auto md:object-contain"
+                    }
                   />
                 </div>
                 <c.icon className="mt-5 h-6 w-6 text-primary sm:mt-4" />
                 <h3 className="mt-3 text-xl font-bold">{c.title}</h3>
                 <p className="mt-2 px-2 text-base text-muted-foreground sm:px-0">{c.desc}</p>
               </div>
-            ))}
+              );
+            })}
           </div>
           <p
             className="mt-12 text-center text-2xl font-black italic sm:text-3xl"
