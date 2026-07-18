@@ -147,42 +147,47 @@
   }
 }
 
-/* ===== Chocolate drip CTA ===== */
-.chocolate-cta {
+/* ===== Chocolate drip CTA — versión intensa ===== */
+.chocolate-wrap {
   position: relative;
-  overflow: visible;
+  display: inline-block;
+  padding-bottom: 90px;
+  margin-bottom: -80px;
 }
-.chocolate-cta::after {
-  content: "";
+.chocolate-wrap .chocolate-drip {
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 100%;
-  height: 32px;
+  top: calc(100% - 22px);
+  left: -6px;
+  right: -6px;
+  height: 90px;
   pointer-events: none;
-  background: linear-gradient(180deg, #3b1e10 0%, #24110a 100%);
-  -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 40' preserveAspectRatio='none'><path d='M0,0 L400,0 L400,10 C388,14 380,26 370,26 C360,26 355,10 344,10 C332,10 325,32 312,32 C300,32 295,12 282,12 C268,12 260,22 248,22 C236,22 228,8 214,8 C200,8 192,30 178,30 C164,30 158,12 144,12 C130,12 122,26 108,26 C94,26 88,10 74,10 C60,10 52,20 40,20 C28,20 22,8 10,10 L0,12 Z'/></svg>");
-  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 40' preserveAspectRatio='none'><path d='M0,0 L400,0 L400,10 C388,14 380,26 370,26 C360,26 355,10 344,10 C332,10 325,32 312,32 C300,32 295,12 282,12 C268,12 260,22 248,22 C236,22 228,8 214,8 C200,8 192,30 178,30 C164,30 158,12 144,12 C130,12 122,26 108,26 C94,26 88,10 74,10 C60,10 52,20 40,20 C28,20 22,8 10,10 L0,12 Z'/></svg>");
-  -webkit-mask-size: 100% 100%;
-  mask-size: 100% 100%;
-  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.4));
+  filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.5));
+  z-index: 2;
 }
-.chocolate-cta::before {
-  content: "";
+.chocolate-wrap .chocolate-drip svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.chocolate-wrap .choco-drop {
   position: absolute;
-  top: 100%;
-  left: 22%;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 30% 30%, #6b3a1f, #2a1409);
-  box-shadow: 140px 4px 0 -1px #3b1e10, 220px -2px 0 0 #4a2614;
-  animation: chocolate-drop 2.8s cubic-bezier(0.6, 0, 0.9, 0.4) infinite;
+  width: 14px;
+  height: 18px;
+  border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+  background: radial-gradient(circle at 35% 30%, #8a4a24 0%, #4a2410 55%, #1e0d06 100%);
+  box-shadow: inset -2px -3px 4px rgba(0, 0, 0, 0.5),
+    inset 2px 2px 3px rgba(255, 200, 150, 0.25);
   pointer-events: none;
+  z-index: 1;
+  opacity: 0;
 }
-@keyframes chocolate-drop {
-  0%   { transform: translateY(6px) scale(1, 0.6); opacity: 0; }
-  15%  { transform: translateY(10px) scale(1, 1); opacity: 1; }
-  85%  { transform: translateY(70px) scale(0.6, 1.6); opacity: 1; }
-  100% { transform: translateY(110px) scale(0.3, 2); opacity: 0; }
+.chocolate-wrap .choco-drop.d1 { left: 14%;  animation: choco-fall 3.2s ease-in 0.1s infinite; }
+.chocolate-wrap .choco-drop.d2 { left: 42%;  animation: choco-fall 3.6s ease-in 1.2s infinite; }
+.chocolate-wrap .choco-drop.d3 { left: 68%;  animation: choco-fall 2.9s ease-in 0.6s infinite; }
+.chocolate-wrap .choco-drop.d4 { left: 88%;  animation: choco-fall 3.4s ease-in 1.8s infinite; }
+@keyframes choco-fall {
+  0%   { top: calc(100% - 4px); transform: scale(0.4, 0.4); opacity: 0; }
+  10%  { top: calc(100% + 6px); transform: scale(1, 1);     opacity: 1; }
+  70%  { transform: scale(0.85, 1.4); opacity: 1; }
+  100% { top: calc(100% + 130px); transform: scale(0.5, 2.2); opacity: 0; }
 }
