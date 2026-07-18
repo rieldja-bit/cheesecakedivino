@@ -15,6 +15,7 @@ import {
   Lock,
 } from "lucide-react";
 import chefImg from "@/assets/chef.jpg";
+import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 // Video served from public/ so it works on Lovable AND Cloudflare Pages.
 const cheesecakeDrippingVideo = { url: "/cheesecake-dripping.mp4" };
 import cheesecakeDrippingImg from "@/assets/cheesecake-dripping.jpg";
@@ -630,6 +631,11 @@ export function SalesPage() {
       <footer className="border-t border-border/50 py-8 text-center text-base text-muted-foreground sm:text-sm">
         © {new Date().getFullYear()} Cheesecake Divino. Todos los derechos reservados.
       </footer>
+      <WhatsAppFloat
+        phone="5500000000000"
+        message="¡Hola! Quiero más información sobre Cheesecake Divino."
+        label="Habla con nosotros por WhatsApp"
+      />
     </div>
   );
 }
