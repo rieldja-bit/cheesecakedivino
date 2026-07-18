@@ -627,7 +627,7 @@ function SalesPageUS() {
         © {new Date().getFullYear()} Divine Cheesecake. All rights reserved.
       </footer>
       <WhatsAppFloat
-        phone="5500000000000"
+        phone="5511959847343"
         message="Hi! I'd like more info about Divine Cheesecake."
         label="Chat with us on WhatsApp"
       />

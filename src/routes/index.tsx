@@ -632,7 +632,7 @@ export function SalesPage() {
         © {new Date().getFullYear()} Cheesecake Divino. Todos los derechos reservados.
       </footer>
       <WhatsAppFloat
-        phone="5500000000000"
+        phone="5511959847343"
         message="¡Hola! Quiero más información sobre Cheesecake Divino."
         label="Habla con nosotros por WhatsApp"
       />
