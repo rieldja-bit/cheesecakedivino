@@ -22,12 +22,12 @@ export function WhatsAppFloat({ phone, message = "", label = "Chat on WhatsApp" 
         background: "linear-gradient(145deg, #25D366 0%, #128C7E 100%)",
       }}
     >
-      <MessageCircle className="h-7 w-7 text-white" strokeWidth={2.4} />
       <span
-        className="absolute inset-0 rounded-full animate-ping opacity-40"
+        className="absolute inset-0 rounded-full animate-ping opacity-40 pointer-events-none"
         style={{ background: "#25D366" }}
         aria-hidden="true"
       />
+      <MessageCircle className="relative h-7 w-7 text-white" strokeWidth={2.4} />
     </a>
   );
 }
