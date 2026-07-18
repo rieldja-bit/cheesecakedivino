@@ -359,6 +359,7 @@ function SalesPageUS() {
                 desc: "15 fillable cookie-cup recipes — crunchy outside, tender inside, ready to go viral.",
                 from: "$76",
                 img: bonus1Img,
+                video: "/bono1-cookies.mp4",
               },
               {
                 tag: "Bonus 2",
@@ -366,6 +367,7 @@ function SalesPageUS() {
                 desc: "15 artisan gluten-free cookies with simple ingredients and flavors that stand out in any display.",
                 from: "$54",
                 img: bonus2Img,
+                video: undefined as string | undefined,
               },
             ].map((b) => (
               <div
@@ -384,11 +386,23 @@ function SalesPageUS() {
                 <span className="text-sm font-bold uppercase tracking-wider text-primary">
                   {b.tag}
                 </span>
-                <img
-                  src={b.img}
-                  alt={b.title}
-                  className="mx-auto mt-6 w-full drop-shadow-[0_20px_40px_rgba(0,0,0,0.55)]"
-                />
+                {b.video ? (
+                  <video
+                    src={b.video}
+                    poster={b.img}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="mx-auto mt-6 w-full drop-shadow-[0_20px_40px_rgba(0,0,0,0.55)]"
+                  />
+                ) : (
+                  <img
+                    src={b.img}
+                    alt={b.title}
+                    className="mx-auto mt-6 w-full drop-shadow-[0_20px_40px_rgba(0,0,0,0.55)]"
+                  />
+                )}
                 <div className="mt-6">
                   <h3 className="text-2xl font-black sm:text-3xl">{b.title}</h3>
                   <p className="mt-3 text-lg text-muted-foreground">{b.desc}</p>
@@ -518,6 +532,92 @@ function SalesPageUS() {
           <div className="mt-6 flex items-center justify-center gap-2 text-lg text-muted-foreground sm:text-base">
             <Lock className="h-5 w-5 text-primary" />
             100% secure payment
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section id="faq" className="border-y border-border/50 bg-card/40 py-20">
+        <div className="mx-auto max-w-3xl px-4">
+          <div className="text-center">
+            <span className="inline-block rounded-full bg-primary/15 px-4 py-1.5 text-sm font-bold uppercase tracking-wider text-primary">
+              Frequently asked questions
+            </span>
+            <h2 className="mt-4 text-3xl font-black tracking-tight sm:text-4xl">
+              Everything you need to know
+            </h2>
+            <p className="mt-3 text-base text-muted-foreground sm:text-lg">
+              Clear up any doubts before taking the leap.
+            </p>
+          </div>
+
+          <div className="mt-10 space-y-3">
+            {[
+              {
+                q: "How do I receive the ebook after purchase?",
+                a: "Right after checkout, you'll get instant access via email with the download link. You can open it from your phone, tablet, or computer anytime.",
+              },
+              {
+                q: "Do I need previous baking experience?",
+                a: "No. Every recipe is explained step by step, with exact measurements and pro tips so anyone can get professional results — even starting from scratch.",
+              },
+              {
+                q: "What format is the material in?",
+                a: "A high-quality PDF, optimized for any device. You can also print it if you'd rather keep a physical copy in your kitchen.",
+              },
+              {
+                q: "Can I sell what I bake with these recipes?",
+                a: "Yes. The ebook includes a full business module: cost calculation, margins, suggested prices, per-slice selling, and strategies to sell via WhatsApp, social media, and to cafés.",
+              },
+              {
+                q: "Are the bonuses included in the price?",
+                a: "Yes. Signature Cookie Shots and Gluten-Free Cookies are 100% included at no extra cost, as long as you purchase during the launch promotion.",
+              },
+              {
+                q: "What if I don't like it? Is there a guarantee?",
+                a: "You get a 7-day unconditional guarantee. If for any reason you don't like the content, email support and we'll refund 100% of your money. No questions asked.",
+              },
+              {
+                q: "Is the payment secure?",
+                a: "Yes. Payment is processed by Hotmart, an international platform with top-tier security. We accept credit card, debit, and other methods depending on your country.",
+              },
+            ].map(({ q, a }) => (
+              <details
+                key={q}
+                className="group rounded-2xl border border-border/60 bg-background/40 p-5 transition-colors hover:border-primary/40 sm:p-6"
+              >
+                <summary className="flex cursor-pointer items-center justify-between gap-4 text-left text-base font-bold sm:text-lg">
+                  <span>{q}</span>
+                  <span
+                    className="grid h-8 w-8 shrink-0 place-items-center rounded-full text-lg font-black transition-transform group-open:rotate-45"
+                    style={{
+                      background:
+                        "linear-gradient(120deg, oklch(0.78 0.16 82), oklch(0.72 0.17 75))",
+                      color: "oklch(0.15 0.03 20)",
+                    }}
+                    aria-hidden
+                  >
+                    +
+                  </span>
+                </summary>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base">
+                  {a}
+                </p>
+              </details>
+            ))}
+          </div>
+
+          <div className="mt-10 text-center">
+            <a
+              href={CHECKOUT_URL}
+              className="inline-block rounded-full px-8 py-4 text-base font-black uppercase tracking-wide text-background shadow-lg transition-transform hover:scale-105 sm:text-lg"
+              style={{
+                background:
+                  "linear-gradient(120deg, oklch(0.78 0.16 82), oklch(0.72 0.17 75))",
+              }}
+            >
+              I want my copy now
+            </a>
           </div>
         </div>
       </section>
