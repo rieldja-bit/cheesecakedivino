@@ -15,6 +15,7 @@ import {
   Lock,
 } from "lucide-react";
 import chefImg from "@/assets/chef.jpg";
+import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 const cheesecakeDrippingVideo = { url: "/cheesecake-dripping.mp4" };
 import cheesecakeDrippingImg from "@/assets/cheesecake-dripping.jpg";
 import heroImg from "@/assets/us/hero.png";
@@ -625,6 +626,11 @@ function SalesPageUS() {
       <footer className="border-t border-border/50 py-8 text-center text-base text-muted-foreground sm:text-sm">
         © {new Date().getFullYear()} Divine Cheesecake. All rights reserved.
       </footer>
+      <WhatsAppFloat
+        phone="5500000000000"
+        message="Hi! I'd like more info about Divine Cheesecake."
+        label="Chat with us on WhatsApp"
+      />
     </div>
   );
 }
