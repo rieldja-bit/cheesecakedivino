@@ -17,9 +17,12 @@ import {
 import chefImg from "@/assets/chef.jpg";
 const cheesecakeDrippingVideo = { url: "/cheesecake-dripping.mp4" };
 import cheesecakeDrippingImg from "@/assets/cheesecake-dripping.jpg";
-
-const heroImg =
-  "https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784287649/0893d6ad-062f-4ff9-83f2-a6a93e93f685_rhsumv.png";
+import heroImg from "@/assets/us/hero.png";
+import inside1Img from "@/assets/us/inside-1.png";
+import inside2Img from "@/assets/us/inside-2.png";
+import inside3Img from "@/assets/us/inside-3.png";
+import bonus1Img from "@/assets/us/bonus-1.png";
+import bonus2Img from "@/assets/us/bonus-2.png";
 
 export const Route = createFileRoute("/cheescake-us")({
   component: SalesPageUS,
@@ -242,19 +245,19 @@ function SalesPageUS() {
           <div className="mx-auto mt-12 grid max-w-3xl gap-10">
             {[
               {
-                img: "https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784285965/de7b698d-e8dc-43cc-848f-d429b67340c8_nzcvwc.png",
+                img: inside1Img,
                 title: "Core recipes",
                 desc: "25 tested versions explained in full detail — from the batter to the final touch.",
                 icon: BookOpen,
               },
               {
-                img: "https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784295347/cccccc_ap4729.png",
+                img: inside2Img,
                 title: "Gourmet flavors & special editions",
                 desc: "Modern combinations, irresistible fillings, and seasonal editions.",
                 icon: Sparkles,
               },
               {
-                img: "https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784286013/8c7821c6-353d-4e15-8a89-4dbdc2a8ca12_pgdbaa.png",
+                img: inside3Img,
                 title: "Pricing & selling",
                 desc: "A clear formula to charge what you're worth and sell fast — without giving your work away.",
                 icon: DollarSign,
@@ -355,14 +358,14 @@ function SalesPageUS() {
                 title: "SIGNATURE COOKIE SHOTS",
                 desc: "15 fillable cookie-cup recipes — crunchy outside, tender inside, ready to go viral.",
                 from: "$76",
-                img: "https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784285924/e060ebb6-54a0-4fef-b013-e36bf05aad68_zpz6v9.png",
+                img: bonus1Img,
               },
               {
                 tag: "Bonus 2",
                 title: "GLUTEN-FREE COOKIES",
                 desc: "15 artisan gluten-free cookies with simple ingredients and flavors that stand out in any display.",
                 from: "$54",
-                img: "https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784285915/ac29dc6d-2784-4ba1-b6ed-e8d8024aea2b_zsuwns.png",
+                img: bonus2Img,
               },
             ].map((b) => (
               <div
