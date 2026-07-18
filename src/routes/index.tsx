@@ -527,6 +527,92 @@ export function SalesPage() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section id="faq" className="border-y border-border/50 bg-card/40 py-20">
+        <div className="mx-auto max-w-3xl px-4">
+          <div className="text-center">
+            <span className="inline-block rounded-full bg-primary/15 px-4 py-1.5 text-sm font-bold uppercase tracking-wider text-primary">
+              Preguntas frecuentes
+            </span>
+            <h2 className="mt-4 text-3xl font-black tracking-tight sm:text-4xl">
+              Todo lo que necesitás saber
+            </h2>
+            <p className="mt-3 text-base text-muted-foreground sm:text-lg">
+              Resolvé tus dudas antes de dar el paso.
+            </p>
+          </div>
+
+          <div className="mt-10 space-y-3">
+            {[
+              {
+                q: "¿Cómo recibo el ebook después de comprar?",
+                a: "Al finalizar la compra, recibís acceso inmediato por email con el enlace de descarga. Podés acceder desde tu celular, tablet o computadora en cualquier momento.",
+              },
+              {
+                q: "¿Necesito experiencia previa en pastelería?",
+                a: "No. Las recetas están explicadas paso a paso, con medidas exactas y consejos para que cualquiera pueda lograr resultados profesionales, incluso empezando desde cero.",
+              },
+              {
+                q: "¿En qué formato viene el material?",
+                a: "Es un PDF de alta calidad, optimizado para leer en cualquier dispositivo. También podés imprimirlo si preferís tenerlo físico en tu cocina.",
+              },
+              {
+                q: "¿Puedo vender lo que preparo con estas recetas?",
+                a: "Sí. El ebook incluye un módulo completo de negocio: cálculo de costos, márgenes, precios sugeridos, venta por porciones y estrategias para vender por WhatsApp, redes sociales y a cafeterías.",
+              },
+              {
+                q: "¿Los bonos están incluidos en el precio?",
+                a: "Sí. Cookies de Autor y Galletas Sin Gluten están 100% incluidos sin costo adicional, siempre que compres durante la promoción de lanzamiento.",
+              },
+              {
+                q: "¿Y si no me gusta? ¿Hay garantía?",
+                a: "Tenés 7 días de garantía incondicional. Si por cualquier motivo no te gusta el contenido, escribís al soporte y te devolvemos el 100% del dinero. Sin preguntas.",
+              },
+              {
+                q: "¿El pago es seguro?",
+                a: "Sí. El pago se procesa por Hotmart, una plataforma internacional con máxima seguridad. Aceptamos tarjeta de crédito, débito y otros medios según tu país.",
+              },
+            ].map(({ q, a }) => (
+              <details
+                key={q}
+                className="group rounded-2xl border border-border/60 bg-background/40 p-5 transition-colors hover:border-primary/40 sm:p-6"
+              >
+                <summary className="flex cursor-pointer items-center justify-between gap-4 text-left text-base font-bold sm:text-lg">
+                  <span>{q}</span>
+                  <span
+                    className="grid h-8 w-8 shrink-0 place-items-center rounded-full text-lg font-black transition-transform group-open:rotate-45"
+                    style={{
+                      background:
+                        "linear-gradient(120deg, oklch(0.78 0.16 82), oklch(0.72 0.17 75))",
+                      color: "oklch(0.15 0.03 20)",
+                    }}
+                    aria-hidden
+                  >
+                    +
+                  </span>
+                </summary>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base">
+                  {a}
+                </p>
+              </details>
+            ))}
+          </div>
+
+          <div className="mt-10 text-center">
+            <a
+              href={CHECKOUT_URL}
+              className="inline-block rounded-full px-8 py-4 text-base font-black uppercase tracking-wide text-background shadow-lg transition-transform hover:scale-105 sm:text-lg"
+              style={{
+                background:
+                  "linear-gradient(120deg, oklch(0.78 0.16 82), oklch(0.72 0.17 75))",
+              }}
+            >
+              Quiero mi copia ahora
+            </a>
+          </div>
+        </div>
+      </section>
+
       <footer className="border-t border-border/50 py-8 text-center text-base text-muted-foreground sm:text-sm">
         © {new Date().getFullYear()} Cheesecake Divino. Todos los derechos reservados.
       </footer>
