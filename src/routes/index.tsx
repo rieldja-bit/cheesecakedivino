@@ -52,7 +52,7 @@ function CTA({ children, className = "" }: { children: React.ReactNode; classNam
 
 export function SalesPage() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen overflow-x-hidden bg-background text-foreground">
       {/* Top urgency bar */}
       <div
         className="w-full py-3 px-4 text-center text-base sm:text-lg font-semibold text-white"
@@ -72,7 +72,7 @@ export function SalesPage() {
           }}
         />
         <div className="relative flex flex-col items-center gap-10 pt-6 pb-16 text-center sm:pt-10 sm:pb-24 md:gap-14 md:pt-12">
-          <div className="relative left-1/2 w-screen -translate-x-1/2">
+          <div className="relative left-1/2 w-screen -translate-x-1/2 lg:left-0 lg:w-full lg:translate-x-0 lg:max-w-5xl lg:mx-auto lg:px-4">
             <div
               className="pointer-events-none absolute inset-0 opacity-60 blur-3xl"
               style={{ background: "radial-gradient(circle at 50% 50%, oklch(0.78 0.16 82 / 0.35), transparent 65%)" }}
@@ -84,7 +84,7 @@ export function SalesPage() {
               loop
               muted
               playsInline
-              className="relative block w-full h-auto drop-shadow-[0_45px_70px_rgba(0,0,0,0.65)]"
+              className="relative block w-full h-auto rounded-none lg:rounded-3xl drop-shadow-[0_45px_70px_rgba(0,0,0,0.65)]"
             />
           </div>
           <div className="mx-auto flex max-w-5xl flex-col items-center px-4 sm:px-6">
