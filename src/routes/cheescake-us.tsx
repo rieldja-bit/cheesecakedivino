@@ -80,7 +80,7 @@ function SalesPageUS() {
               src={heroImg}
               alt="Divine Cheesecake — product"
               loading="eager"
-              className="relative block w-full h-auto rounded-none lg:rounded-3xl drop-shadow-[0_45px_70px_rgba(0,0,0,0.65)]"
+              className="relative block w-full h-auto object-contain rounded-2xl lg:rounded-3xl drop-shadow-[0_45px_70px_rgba(0,0,0,0.65)]"
             />
           </div>
           <div className="mx-auto flex max-w-5xl flex-col items-center px-4 sm:px-6">
