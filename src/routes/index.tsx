@@ -33,20 +33,47 @@ const CHECKOUT_URL = "https://pay.hotmart.com/M106778531G?checkoutMode=10";
 
 function CTA({ children, className = "" }: { children: React.ReactNode; className?: string }) {
   return (
-    <a
-      href={CHECKOUT_URL}
-      className={
-        "chocolate-cta group relative inline-flex items-center justify-center gap-2 rounded-full px-8 py-5 text-lg font-bold uppercase tracking-wide text-primary-foreground shadow-[0_10px_40px_-10px_oklch(0.78_0.16_82/0.6)] transition-all hover:scale-[1.02] hover:shadow-[0_15px_50px_-10px_oklch(0.78_0.16_82/0.8)] sm:px-10 sm:py-4 sm:text-lg " +
-        className
-      }
-      style={{
-        background:
-          "linear-gradient(135deg, oklch(0.85 0.17 88) 0%, oklch(0.72 0.17 75) 50%, oklch(0.85 0.17 88) 100%)",
-      }}
-    >
-      <Sparkles className="h-5 w-5" strokeWidth={2.5} />
-      {children}
-    </a>
+    <span className={"chocolate-wrap " + className}>
+      <a
+        href={CHECKOUT_URL}
+        className="group relative z-10 inline-flex items-center justify-center gap-2 rounded-full px-8 py-5 text-lg font-bold uppercase tracking-wide text-primary-foreground shadow-[0_10px_40px_-10px_oklch(0.78_0.16_82/0.6)] transition-all hover:scale-[1.02] hover:shadow-[0_15px_50px_-10px_oklch(0.78_0.16_82/0.8)] sm:px-10 sm:py-4 sm:text-lg"
+        style={{
+          background:
+            "linear-gradient(135deg, oklch(0.85 0.17 88) 0%, oklch(0.72 0.17 75) 50%, oklch(0.85 0.17 88) 100%)",
+        }}
+      >
+        <Sparkles className="h-5 w-5" strokeWidth={2.5} />
+        {children}
+      </a>
+      <span className="chocolate-drip" aria-hidden>
+        <svg viewBox="0 0 400 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="chocoGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#5a2d15" />
+              <stop offset="45%" stopColor="#3a1c0c" />
+              <stop offset="100%" stopColor="#180a04" />
+            </linearGradient>
+            <linearGradient id="chocoShine" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="rgba(255,210,160,0.55)" />
+              <stop offset="100%" stopColor="rgba(255,210,160,0)" />
+            </linearGradient>
+          </defs>
+          <path
+            d="M0,0 L400,0 L400,22 C388,30 380,20 372,28 C364,36 362,58 352,62 C340,66 334,42 322,42 C306,42 302,72 288,72 C274,72 268,34 252,34 C238,34 232,52 218,52 C204,52 198,28 182,28 C168,28 160,78 144,78 C130,78 124,44 108,44 C94,44 88,60 74,60 C60,60 54,32 40,34 C28,36 20,54 10,50 L0,44 Z"
+            fill="url(#chocoGrad)"
+          />
+          <path
+            d="M0,0 L400,0 L400,10 C380,14 360,10 340,14 C320,18 300,10 280,14 C260,18 240,10 220,14 C200,18 180,10 160,14 C140,18 120,10 100,14 C80,18 60,10 40,14 C20,18 10,12 0,14 Z"
+            fill="url(#chocoShine)"
+            opacity="0.7"
+          />
+        </svg>
+      </span>
+      <span className="choco-drop d1" aria-hidden />
+      <span className="choco-drop d2" aria-hidden />
+      <span className="choco-drop d3" aria-hidden />
+      <span className="choco-drop d4" aria-hidden />
+    </span>
   );
 }
 
