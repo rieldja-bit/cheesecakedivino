@@ -7,9 +7,15 @@ interface WhatsAppFloatProps {
 }
 
 export function WhatsAppFloat({ phone, message = "", label = "Chat on WhatsApp" }: WhatsAppFloatProps) {
-  const href = `https://wa.me/${phone.replace(/[^0-9]/g, "")}${
-    message ? `?text=${encodeURIComponent(message)}` : ""
-  }`;
+  const cleanPhone = phone.replace(/[^0-9]/g, "");
+  const text = message ? `&text=${encodeURIComponent(message)}` : "";
+  // Use web.whatsapp.com on desktop and wa.me on mobile to evitar bloqueios de api.whatsapp.com
+  const isMobile =
+    typeof navigator !== "undefined" &&
+    /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
+  const href = isMobile
+    ? `https://wa.me/${cleanPhone}${message ? `?text=${encodeURIComponent(message)}` : ""}`
+    : `https://web.whatsapp.com/send?phone=${cleanPhone}${text}`;
 
   return (
     <a
