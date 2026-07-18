@@ -363,6 +363,7 @@ export function SalesPage() {
                 desc: "15 recetas de vasitos de galleta rellenables — crujientes por fuera, tiernos por dentro, listos para viralizarse.",
                 from: "$76",
                 img: "https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784285924/e060ebb6-54a0-4fef-b013-e36bf05aad68_zpz6v9.png",
+                video: "/bono1-cookies.mp4",
               },
               {
                 tag: "Bono 2",
@@ -370,6 +371,7 @@ export function SalesPage() {
                 desc: "15 galletas artesanales sin gluten, con ingredientes simples y sabores que se destacan en cualquier vitrina.",
                 from: "$54",
                 img: "https://res.cloudinary.com/dkxd7dqxo/image/upload/v1784285915/ac29dc6d-2784-4ba1-b6ed-e8d8024aea2b_zsuwns.png",
+                video: undefined as string | undefined,
               },
             ].map((b) => (
               <div
