@@ -359,6 +359,7 @@ function SalesPageUS() {
                 desc: "15 fillable cookie-cup recipes — crunchy outside, tender inside, ready to go viral.",
                 from: "$76",
                 img: bonus1Img,
+                video: "/bono1-cookies.mp4",
               },
               {
                 tag: "Bonus 2",
@@ -366,6 +367,7 @@ function SalesPageUS() {
                 desc: "15 artisan gluten-free cookies with simple ingredients and flavors that stand out in any display.",
                 from: "$54",
                 img: bonus2Img,
+                video: undefined as string | undefined,
               },
             ].map((b) => (
               <div
@@ -384,11 +386,23 @@ function SalesPageUS() {
                 <span className="text-sm font-bold uppercase tracking-wider text-primary">
                   {b.tag}
                 </span>
-                <img
-                  src={b.img}
-                  alt={b.title}
-                  className="mx-auto mt-6 w-full drop-shadow-[0_20px_40px_rgba(0,0,0,0.55)]"
-                />
+                {b.video ? (
+                  <video
+                    src={b.video}
+                    poster={b.img}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="mx-auto mt-6 w-full drop-shadow-[0_20px_40px_rgba(0,0,0,0.55)]"
+                  />
+                ) : (
+                  <img
+                    src={b.img}
+                    alt={b.title}
+                    className="mx-auto mt-6 w-full drop-shadow-[0_20px_40px_rgba(0,0,0,0.55)]"
+                  />
+                )}
                 <div className="mt-6">
                   <h3 className="text-2xl font-black sm:text-3xl">{b.title}</h3>
                   <p className="mt-3 text-lg text-muted-foreground">{b.desc}</p>
