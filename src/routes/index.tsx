@@ -77,18 +77,18 @@ export function SalesPage() {
               className="pointer-events-none absolute inset-0 opacity-60 blur-3xl"
               style={{ background: "radial-gradient(circle at 50% 50%, oklch(0.78 0.16 82 / 0.35), transparent 65%)" }}
             />
-            <img
-              src={heroImg}
-              alt="Cheesecake Divino - producto"
-              loading="eager"
+            <video
+              src="/hero-cheesecake.mp4"
+              poster={heroImg}
+              autoPlay
+              loop
+              muted
+              playsInline
               className="relative block w-full h-auto drop-shadow-[0_45px_70px_rgba(0,0,0,0.65)]"
             />
           </div>
           <div className="mx-auto flex max-w-5xl flex-col items-center px-4 sm:px-6">
-            <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-base font-semibold uppercase tracking-wider text-primary sm:text-sm">
-              <Flame className="h-4 w-4" /> Best seller · Recetario premium
-            </span>
-            <h1 className="mt-5 max-w-3xl text-4xl font-black leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
+            <h1 className="max-w-3xl text-4xl font-black leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
               El recetario{" "}
               <span
                 className="bg-clip-text text-transparent"
