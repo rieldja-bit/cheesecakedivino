@@ -428,7 +428,7 @@ function SalesPageUS() {
           }}
         >
           <div className="grid gap-10 md:grid-cols-2 md:items-center">
-            <div className="relative">
+            <div className="relative mx-auto w-full max-w-sm sm:max-w-md md:max-w-none">
               <div
                 className="absolute -inset-6 rounded-full blur-3xl opacity-40"
                 style={{ background: "radial-gradient(circle, oklch(0.78 0.16 82 / 0.6), transparent 70%)" }}
