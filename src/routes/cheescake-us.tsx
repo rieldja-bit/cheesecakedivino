@@ -179,7 +179,7 @@ function SalesPageUS() {
               <CTA>Get started now</CTA>
             </div>
           </div>
-          <div className="relative mx-auto w-full max-w-[520px]">
+          <div className="relative mx-auto w-full max-w-[520px] md:max-w-none">
             <video
               src={cheesecakeDrippingVideo.url}
               poster={cheesecakeDrippingImg}
@@ -187,7 +187,7 @@ function SalesPageUS() {
               loop
               muted
               playsInline
-              className="mx-auto block w-full h-auto object-contain object-center rounded-3xl drop-shadow-[0_25px_50px_rgba(0,0,0,0.5)]"
+              className="block w-full h-auto rounded-3xl drop-shadow-[0_25px_50px_rgba(0,0,0,0.5)]"
             />
           </div>
         </div>
