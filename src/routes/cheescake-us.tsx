@@ -93,8 +93,7 @@ function SalesPageUS() {
               <span
                 className="bg-clip-text text-transparent"
                 style={{
-                  backgroundImage:
-                    "linear-gradient(120deg, oklch(0.88 0.17 90), oklch(0.72 0.17 75))",
+                  backgroundImage: "linear-gradient(120deg, oklch(0.88 0.17 90), oklch(0.72 0.17 75))",
                 }}
               >
                 Divine Cheesecake
@@ -102,7 +101,8 @@ function SalesPageUS() {
               recipe book: the dessert everyone falls in love with at first bite — and your next real business.
             </h1>
             <p className="mt-6 max-w-xl text-lg text-muted-foreground">
-              A dessert that takes minutes to make, costs almost nothing, and practically sells itself. Every step, every flavor, and the pricing strategy — ready for you to start today.
+              A dessert that takes minutes to make, costs almost nothing, and practically sells itself. Every step,
+              every flavor, and the pricing strategy — ready for you to start today.
             </p>
             <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row">
               <CTA>I want my recipe book</CTA>
@@ -151,9 +151,7 @@ function SalesPageUS() {
       <section className="mx-auto max-w-6xl px-4 py-20">
         <div className="grid gap-12 md:grid-cols-2 md:items-center">
           <div>
-            <h2 className="text-3xl font-black tracking-tight sm:text-4xl">
-              What you'll get with Divine Cheesecake
-            </h2>
+            <h2 className="text-3xl font-black tracking-tight sm:text-4xl">What you'll get with Divine Cheesecake</h2>
             <ul className="mt-8 space-y-4">
               {[
                 "Bake a cheesecake so good your customers order a second one before finishing the first.",
@@ -172,9 +170,7 @@ function SalesPageUS() {
                 </li>
               ))}
             </ul>
-            <p className="mt-8 text-muted-foreground">
-              If that sounds like you, click below and start today.
-            </p>
+            <p className="mt-8 text-muted-foreground">If that sounds like you, click below and start today.</p>
             <div className="mt-6">
               <CTA>Get started now</CTA>
             </div>
@@ -218,7 +214,9 @@ function SalesPageUS() {
               Recipes tested by a professional pastry chef
             </h2>
             <p className="mt-5 text-lg text-muted-foreground">
-              Every recipe was developed, tweaked, and tested in a real kitchen until the texture, flavor, and presentation were perfect. No formulas copied off the internet — this is the same step-by-step used by people who already make a living from it.
+              Every recipe was developed, tweaked, and tested in a real kitchen until the texture, flavor, and
+              presentation were perfect. No formulas copied off the internet — this is the same step-by-step used by
+              people who already make a living from it.
             </p>
             <ul className="mt-6 space-y-3">
               {[
@@ -228,7 +226,7 @@ function SalesPageUS() {
               ].map((t) => (
                 <li key={t} className="flex gap-3">
                   <Check className="mt-1 h-5 w-5 shrink-0 text-primary" strokeWidth={3} />
-              <span className="text-lg text-foreground/90">{t}</span>
+                  <span className="text-lg text-foreground/90">{t}</span>
                 </li>
               ))}
             </ul>
@@ -241,7 +239,9 @@ function SalesPageUS() {
         <div className="mx-auto max-w-6xl px-4">
           <div className="text-center">
             <h2 className="text-3xl font-black tracking-tight sm:text-4xl">Everything that's inside</h2>
-            <p className="mt-3 text-lg text-muted-foreground">A practical, no-fluff recipe book you can put to work today.</p>
+            <p className="mt-3 text-lg text-muted-foreground">
+              A practical, no-fluff recipe book you can put to work today.
+            </p>
           </div>
           <div className="mx-auto mt-12 grid max-w-3xl gap-10">
             {[
@@ -338,14 +338,13 @@ function SalesPageUS() {
       <section
         className="border-y border-border/50 py-20"
         style={{
-          background:
-            "linear-gradient(180deg, oklch(0.22 0.06 25), oklch(0.16 0.05 25))",
+          background: "linear-gradient(180deg, oklch(0.22 0.06 25), oklch(0.16 0.05 25))",
         }}
       >
         <div className="mx-auto max-w-6xl px-4">
           <div className="text-center">
             <span className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-1.5 text-base font-semibold uppercase tracking-wider text-primary sm:text-sm">
-              <Gift className="h-4 w-4" /> Included at no extra cost
+              <Gift className="h-4 w-4" /> Available as a paid upgrade
             </span>
             <h2 className="mt-5 text-3xl font-black tracking-tight sm:text-4xl">Two bonuses that add real value</h2>
             <p className="mx-auto mt-3 max-w-2xl text-lg text-muted-foreground">
@@ -376,17 +375,14 @@ function SalesPageUS() {
                 className="relative overflow-hidden rounded-2xl border-2 p-8"
                 style={{
                   borderColor: "oklch(0.78 0.16 82 / 0.4)",
-                  background:
-                    "linear-gradient(135deg, oklch(0.24 0.07 25), oklch(0.18 0.05 25))",
+                  background: "linear-gradient(135deg, oklch(0.24 0.07 25), oklch(0.18 0.05 25))",
                 }}
               >
                 <div
                   className="absolute -right-10 -top-10 h-40 w-40 rounded-full opacity-30 blur-3xl"
                   style={{ background: "oklch(0.78 0.16 82)" }}
                 />
-                <span className="text-sm font-bold uppercase tracking-wider text-primary">
-                  {b.tag}
-                </span>
+                <span className="text-sm font-bold uppercase tracking-wider text-primary">{b.tag}</span>
                 {b.video ? (
                   <video
                     src={b.video}
@@ -418,7 +414,7 @@ function SalesPageUS() {
                       WebkitTextFillColor: "transparent",
                     }}
                   >
-                    Included
+                    Available as upgrade
                   </span>
                 </div>
               </div>
@@ -438,8 +434,7 @@ function SalesPageUS() {
           className="mt-8 overflow-hidden rounded-3xl border-2 p-8 sm:p-12"
           style={{
             borderColor: "oklch(0.78 0.16 82 / 0.5)",
-            background:
-              "linear-gradient(135deg, oklch(0.24 0.07 25), oklch(0.18 0.05 25))",
+            background: "linear-gradient(135deg, oklch(0.24 0.07 25), oklch(0.18 0.05 25))",
           }}
         >
           <div className="grid gap-10 md:grid-cols-2 md:items-center">
@@ -461,8 +456,7 @@ function SalesPageUS() {
                 <span
                   className="bg-clip-text text-transparent"
                   style={{
-                    backgroundImage:
-                      "linear-gradient(120deg, oklch(0.88 0.17 90), oklch(0.72 0.17 75))",
+                    backgroundImage: "linear-gradient(120deg, oklch(0.88 0.17 90), oklch(0.72 0.17 75))",
                   }}
                 >
                   Divine Cheesecake
@@ -528,7 +522,8 @@ function SalesPageUS() {
           </div>
           <h3 className="mt-4 text-xl font-black">7 days to try it risk-free</h3>
           <p className="mx-auto mt-2 max-w-xl text-lg text-muted-foreground sm:text-base">
-            If the recipe book doesn't deliver what we promise, just email us and we'll refund every penny. No questions, no hassle.
+            If the recipe book doesn't deliver what we promise, just email us and we'll refund every penny. No
+            questions, no hassle.
           </p>
           <div className="mt-6 flex items-center justify-center gap-2 text-lg text-muted-foreground sm:text-base">
             <Lock className="h-5 w-5 text-primary" />
@@ -544,9 +539,7 @@ function SalesPageUS() {
             <span className="inline-block rounded-full bg-primary/15 px-4 py-1.5 text-sm font-bold uppercase tracking-wider text-primary">
               Frequently asked questions
             </span>
-            <h2 className="mt-4 text-3xl font-black tracking-tight sm:text-4xl">
-              Everything you need to know
-            </h2>
+            <h2 className="mt-4 text-3xl font-black tracking-tight sm:text-4xl">Everything you need to know</h2>
             <p className="mt-3 text-base text-muted-foreground sm:text-lg">
               Clear up any doubts before taking the leap.
             </p>
@@ -572,7 +565,7 @@ function SalesPageUS() {
               },
               {
                 q: "Are the bonuses included in the price?",
-                a: "Yes. Signature Cookie Shots and Gluten-Free Cookies are 100% included at no extra cost, as long as you purchase during the launch promotion.",
+                a: "No, Signature Cookie Shots and Gluten-Free Cookies aren´t included in this price, but you can add them as an upgrade right after checkout",
               },
               {
                 q: "What if I don't like it? Is there a guarantee?",
@@ -592,8 +585,7 @@ function SalesPageUS() {
                   <span
                     className="grid h-8 w-8 shrink-0 place-items-center rounded-full text-lg font-black transition-transform group-open:rotate-45"
                     style={{
-                      background:
-                        "linear-gradient(120deg, oklch(0.78 0.16 82), oklch(0.72 0.17 75))",
+                      background: "linear-gradient(120deg, oklch(0.78 0.16 82), oklch(0.72 0.17 75))",
                       color: "oklch(0.15 0.03 20)",
                     }}
                     aria-hidden
@@ -601,9 +593,7 @@ function SalesPageUS() {
                     +
                   </span>
                 </summary>
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base">
-                  {a}
-                </p>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base">{a}</p>
               </details>
             ))}
           </div>
@@ -613,8 +603,7 @@ function SalesPageUS() {
               href={CHECKOUT_URL}
               className="inline-block rounded-full px-8 py-4 text-base font-black uppercase tracking-wide text-background shadow-lg transition-transform hover:scale-105 sm:text-lg"
               style={{
-                background:
-                  "linear-gradient(120deg, oklch(0.78 0.16 82), oklch(0.72 0.17 75))",
+                background: "linear-gradient(120deg, oklch(0.78 0.16 82), oklch(0.72 0.17 75))",
               }}
             >
               I want my copy now
